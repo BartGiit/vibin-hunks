@@ -138,8 +138,9 @@
     .NavBar .NavList{
         margin-top:0;
         position:fixed;
-        top:-100%;
+        top:0;
         left:0;
+        transform: translateY(-100%);
         width:100vw;
         height:100vh;
         flex-direction:column;
@@ -222,7 +223,7 @@
     }
 
     .NavBar .NavList.Responsive{
-        top:0;
+        transform: translateY(0);
     }
 
     .NavBar .NavList .SmallLogo{
