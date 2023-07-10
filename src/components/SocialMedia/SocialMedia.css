@@ -1,0 +1,325 @@
+.SocialMedia{
+    width:100%;
+    height:100vh;
+    min-height:700px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+}
+
+.SocialMedia .TextWrapper{
+    width:900px;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.SocialMedia .Text{
+    width:700px;
+    height:340px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    position:relative;
+}
+
+.SocialMedia img.textSVG{
+    position:absolute;
+    left:-16%;
+    top:-28%;
+    width:270px;
+    animation-name: floatingImgSmOne;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.SocialMedia img.textSVGsecond{
+    position:absolute;
+    right:-4%;
+    bottom:0;
+    width:270px;
+    animation-name: floatingImgSmTwo;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.SocialMedia .Text .Love{
+    font-size:52px;
+    font-family:Rokkitt;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-weight:900;
+}
+
+.SocialMedia .Text .Icons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.SocialMedia .Text .Icons a{
+    display:block;
+    width:100px;
+    height:100px;
+    font-size:100px;
+    margin-right:28px;
+    margin-left:28px;
+}
+.SocialMedia .Text .Icons a img{
+    width:100%;
+    height:100%;
+}
+
+.SocialMedia .Text img{
+    height:80px;
+}
+
+.SocialMedia .Image{
+    width:900px;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.SocialMedia .Image img.textSVGthird{
+    position:absolute;
+    left:8%;
+    top:12%;
+    width:200px;
+    animation-name: floatingImgSmThree;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.SocialMedia .Image p{
+    display:none;
+}
+
+.SocialMedia .Image video{
+    width:100%;
+    margin-bottom:150px;
+}
+
+@media (max-width: 1800px){
+    .SocialMedia .TextWrapper{
+        width:50%;
+    }
+    .SocialMedia .Image{
+        width:50%;
+    }
+}
+
+@media (max-width: 1700px){
+    .SocialMedia img.textSVG{
+        left:-4%;
+        width:240px;
+    }
+    .SocialMedia .Image img.textSVGthird{
+        left:2%;
+        width:180px
+    }
+}
+
+@media (max-width: 1500px){
+    .SocialMedia img.textSVG{
+        left:-16%;
+        width:240px;
+    }
+
+    .SocialMedia img.textSVGsecond{
+        right:-20%;
+    }
+
+    .SocialMedia .Image img.textSVGthird{
+        left:0;
+        width:170px
+    }
+
+    .SocialMedia .Text .Icons a{
+        display:block;
+        width:90px;
+        height:90px;
+        font-size:90px;
+        margin-right:24px;
+        margin-left:24px;
+    }
+    .SocialMedia .Text{
+        width:500px;
+    }
+    .SocialMedia .Text .Love{
+        font-size:38px;
+    }
+}
+
+@media(max-width: 1250px){
+    .SocialMedia img.textSVG{
+        left:-4%;
+    }
+}
+
+@media (max-width: 1100px){
+    .SocialMedia img.textSVGsecond{
+        right:-10%;
+    }
+
+    .SocialMedia .Image img.textSVGthird{
+        left:-2%;
+        top:28%;
+    }
+
+    .SocialMedia{
+        flex-direction:column-reverse;
+        height:1100px;
+        align-items:center;
+    }
+    .SocialMedia .Text .Love{
+        display:none;
+    }
+    .SocialMedia .Image p{
+        display:block;
+        margin-top:30px;
+        width:500px;
+        font-size:72px;
+        line-height:62px;
+        font-family:Rokkitt;
+        text-transform:uppercase;
+        letter-spacing:4px;
+        font-weight:900;
+        text-align:center;
+        color:white;
+    }
+    .SocialMedia .Image{
+        flex-direction:column;
+        align-items:center;
+        width:600px;
+    }
+    .SocialMedia .TextWrapper{
+        height:260px;
+        width:600px;
+    }
+    .SocialMedia .Image video{
+        margin-bottom:40px;
+        margin-left:42px;
+    }
+    .SocialMedia .Text{
+        width:600px;
+        justify-content:space-evenly;
+    }
+    .SocialMedia .Text .Icons a{
+        display:block;
+        width:80px;
+        height:80px;
+        font-size:80px;
+        margin-right:18px;
+        margin-left:18px;
+    }
+    .SocialMedia .Text img{
+        margin-bottom:30px;
+    }
+}
+
+@media (max-width: 550px){
+    .textSVG{
+        display:none;
+    }
+    .SocialMedia img.textSVGsecond{
+        right:12%;
+        bottom:28%;
+        width:220px;
+        height:70px;
+        animation-name: floatingImgSmTwoMobile;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .SocialMedia .Image img.textSVGthird{
+        left:20%;
+        top:35%;
+        width:98px;
+        animation-name: floatingImgSmThreeMobile;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .SocialMedia .Image p{
+        width:320px;
+        font-size:44px;
+    }
+    .SocialMedia .Text .Icons a{
+        display:block;
+        width:40px;
+        height:40px;
+        font-size:40px;
+        margin-right:8px;
+        margin-left:8px;
+    }
+
+    .SocialMedia .Text .Logo{
+        width:100px;
+    }
+}
+@media (max-width: 500px){
+    .SocialMedia{
+        background-color: #97A5FF;
+    }}
+
+@media (max-width: 380px){
+    .SocialMedia{
+        height:900px;
+    }
+    .SocialMedia .Image video{
+        width:470px;
+    }
+    .SocialMedia .Image img.textSVGthird{
+        left:24%;
+        top:35%;
+        width:90px;
+    }
+}
+
+@keyframes floatingImgSmOne {
+    0%   {transform: translateY(-4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(-4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingImgSmTwo {
+    0%   {transform: translateY(4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(-4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingImgSmTwoMobile {
+    0%   {transform: translateY(4px) rotate(14deg); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(-4px) rotate(14deg); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(4px) rotate(14deg); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingImgSmOne {
+    0%   {transform: translateY(-4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(-4px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingImgSmThree {
+    0%   {transform: translateY(7px) translateX(1px) rotate(-8deg) scale(94%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(-7px) translateX(-4px) rotate(-8deg) scale(100%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(7px) translateX(1px) rotate(-8deg) scale(94%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingImgSmThreeMobile {
+    0%   {transform: translateY(5px) translateX(1px) rotate(-2deg) scale(94%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(-5px) translateX(-4px) rotate(-2deg) scale(100%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(5px) translateX(1px) rotate(-2deg) scale(94%); transform-origin: bottom right; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}

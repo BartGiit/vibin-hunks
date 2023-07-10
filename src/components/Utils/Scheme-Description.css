@@ -1,0 +1,102 @@
+.Description.Scheme{
+    width:50%;
+    height:100%;
+    max-width:900px;
+    display:flex;
+    flex-direction:column;
+    padding-top:20vh;
+    align-items:center;
+}
+
+.Description.Scheme h1{
+    width:67%;
+    font-size:85px;
+    line-height:80px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:8px;
+    font-family:Rokkitt;
+    color:white;
+}
+
+.Description.Scheme h1.Gold{
+    color:#FEC65A;
+}
+
+.Description.Scheme p{
+    width:65%;
+    font-family:Lato;
+    font-weight:700;
+    font-size:20px;
+    letter-spacing:1px;
+    margin-bottom:48px;
+    color:white;
+}
+
+.Description.Scheme p.Space{
+    margin-top:38px;
+    margin-bottom:28px;
+}
+
+.Description.Scheme .Btn{
+    width:260px;
+    height:55px;
+    line-height:55px;
+    margin-top:5px;
+    text-align:center;
+    background-color:rgb(255, 255, 255, 0.15);
+    border-radius:29px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    letter-spacing:2px;
+    text-decoration:none;
+    color:white;
+    font-family:Lato;
+    font-weight:700;
+    font-size:16px;
+}
+
+@media (max-width:1550px){
+    .Description.Scheme p{
+        width:72%;
+        font-size:22px;
+    }
+
+    .Description.Scheme p{
+        margin-bottom:24px;
+    }
+
+    .Description.Scheme p.Space{
+        margin-bottom:22px;
+    }
+}
+
+@media (max-width:1000px){
+    .Description.Scheme{
+        width:100%;
+        padding-top:9vh;
+    }
+
+    .Description.Scheme h1{
+        font-size:44px;
+        line-height:44px;
+        width:88%;
+        text-align:center !important;
+    }
+
+    .Description.Scheme p{
+        font-size:18px;
+        font-weight: 400;
+        width:88%;
+        text-align:center !important;
+    }
+
+    .Description.Scheme .Btn{
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    
+    .Description.Scheme p.Space{
+        margin-top:20px;
+    }
+
+}

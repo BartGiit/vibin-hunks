@@ -1,0 +1,95 @@
+.Hunks10k{
+    width:100%;
+    height:100vh;
+    min-height:700px;
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    justify-content:center;
+    overflow:visible;
+}
+
+.Hunks10k img {
+    width:300px;
+    left:13%;
+    top:3%;
+    position: absolute;
+    z-index:-99;
+    animation-name: floatingImg;
+    animation-duration: 5s;
+    animation-delay: 0.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Hunks10k .Draggable{
+    left:4%;
+    top:7%;
+    position:absolute;
+}
+
+.Hunks10k .Draggable.Two{
+    left:4%;
+    top:70%;
+    position:absolute;
+}
+
+@media (max-width:1300px){
+    .Hunks10k .Draggable{
+        display: none;
+    }
+
+    .Hunks10k img {
+        display: none;
+    }
+    
+    .Hunks10k .Draggable.Two{
+        display: none;
+    }
+}
+
+@media (max-width:1000px){
+    .Hunks10k{
+        flex-direction:column;
+        align-items:center;
+        height:900px;
+    }
+}
+
+@media (max-width:500px){
+    .Hunks10k{
+        flex-direction:column;
+        align-items:center;
+        height:1100px;
+        background-color: #6073F0;
+    }
+}
+
+@media (max-height: 700px){
+    .Hunks10k .Draggable.Two{
+        height: 170px;
+        width: 170px;
+        top: 78%;
+        left: 3%;
+    }
+}
+
+@media (max-height: 600px){
+    .Hunks10k .Draggable{
+        display: none;
+    }
+
+    .Hunks10k img {
+        display: none;
+    }
+    
+    .Hunks10k .Draggable.Two{
+        display: none;
+    }
+}
+
+@keyframes floatingImg {
+    0%   {transform: translateY(-15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(-15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}

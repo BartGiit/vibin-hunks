@@ -1,0 +1,67 @@
+.Additional {
+    width: 250px;
+    height: 250px;
+    z-index: 10;
+    background-position: center;
+    background-size: contain;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Additional.Two{
+    width:250px;
+    height:250px;
+    z-index:10;
+    background-position:center;
+    background-size:contain;
+    animation-name: floatingTwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: .5s;
+}
+
+.Additional:hover{
+    cursor:pointer;
+}
+
+.Additional.Two:hover{
+    cursor:pointer;
+}
+
+@keyframes floating {
+    0%   {transform: translateY(-15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(-15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+
+@keyframes floatingTwo {
+    0%   {transform: translateY(12px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateY(-12px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateY(12px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@media (max-width:1800px){
+    .Additional{
+    width:220px;
+    height:220px;
+    }
+    .Additional.Two{
+        width:220px;
+        height:220px;
+    }
+}
+
+@media (max-width:1400px){
+    .Additional{
+        width:180px;
+        height:180px;
+    }
+    .Additional.Two{
+        width:180px;
+        height:180px;
+    }
+}

@@ -1,0 +1,73 @@
+.Background{
+    position:relative;
+}
+
+.Background .EllipseOne {
+    height:240vh;
+    width:160vw;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    transform: translateX(-38%) translateY(-26%);
+    animation-name: floatingEllipseOne;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Background .EllipseTwo {
+    height:260vh;
+    width:130vw;
+    position:absolute;
+    left:0;
+    top:200vh;
+    right:0;
+    transform: translateX(5%) translateY(-50vh);
+    animation-name: floatingEllipseTwo;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.Background .EllipseThree {
+    height:300vh;
+    width:200vw;
+    position:absolute;
+    left:0;
+    top:400vh;
+    right:0;
+    transform: translateY(-40vh);
+}
+
+.Background .EllipseFour {
+    height:220vh;
+    width:110vw;
+    position:absolute;
+    left:0;
+    top:400vh;
+    right:0;
+    transform: translateX(-50%) translateY(-82vh);
+    animation-name: floatingEllipseFour;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floatingEllipseOne {
+    0%   {transform: translateX(-39%) translateY(-26%); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateX(-33%) translateY(-26%); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateX(-39%) translateY(-26%); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingEllipseTwo {
+    0%   {transform: translateX(6%) translateY(-50vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateX(0) translateY(-50vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateX(6%) translateY(-50vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}
+
+@keyframes floatingEllipseFour {
+    0%   {transform: translateX(-50%) translateY(-82vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    50%  {transform: translateX(-40%) translateY(-82vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    100% {transform: translateX(-50%) translateY(-82vh); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+}

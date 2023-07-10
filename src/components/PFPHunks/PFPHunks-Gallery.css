@@ -1,0 +1,323 @@
+.PFPHunks .Gallery{
+    width:50%;
+    height:100%;
+    max-width:900px;
+    position:relative;
+}
+
+.PFPHunks div.First{
+    width:360px;
+    height:360px;
+    left:90px;
+    top:420px;
+    transform:rotate(-18.5deg);
+}
+
+.PFPHunks div.Second{
+    width:380px;
+    height:380px;
+    left:190px;
+    top:125px;
+    transform:rotate(-4.5deg);
+}
+
+.PFPHunks div.Third{
+    width:420px;
+    height:420px;
+    left:470px;
+    top:280px;
+    transform:rotate(8deg);
+}
+
+.PFPHunks .Gallery div{
+    position:absolute;
+    cursor: pointer;
+    border-radius:24px;
+    background-size:cover;
+}
+
+@media (max-height:900px){
+    .PFPHunks div.First{
+        width:340px;
+        height:340px;
+    }
+
+    .PFPHunks div.Second{
+        width:360px;
+        height:360px;
+    }
+
+    .PFPHunks div.Third{
+        width:400px;
+        height:400px;
+    }
+}
+
+@media (max-width:1650px){
+    .PFPHunks div.First{
+        width:320px;
+        height:320px;
+        left:105px;
+        top:450px;
+    }
+
+    .PFPHunks div.Second{
+        width:340px;
+        height:340px;
+        left:200px;
+        top:155px;
+    }
+
+    .PFPHunks div.Third{
+        width:380px;
+        height:380px;
+        left:440px;
+        top:310px;
+    }
+}
+
+@media (max-width:1550px){
+    .PFPHunks div.First{
+        width:280px;
+        height:280px;
+        left:125px;
+        top:450px;
+    }
+
+    .PFPHunks div.Second{
+        width:300px;
+        height:300px;
+    }
+
+    .PFPHunks div.Third{
+        width:340px;
+        height:340px;
+        left:410px;
+        top:310px;
+    }
+}
+
+@media (max-width:1400px){
+    .PFPHunks div.First{
+        width:240px;
+        height:240px;
+        left:115px;
+        top:455px;
+    }
+
+    .PFPHunks div.Second{
+        width:260px;
+        height:260px;
+        left:170px;
+        top:215px;
+    }
+
+    .PFPHunks div.Third{
+        width:300px;
+        height:300px;
+        left:350px;
+        top:335px;
+    }
+}
+
+@media (max-width:1220px){
+    .PFPHunks div.First{
+        width:230px;
+        height:230px;
+        left:85px;
+        top:455px;
+    }
+
+    .PFPHunks div.Second{
+        width:250px;
+        height:250px;
+        left:140px;
+        top:215px;
+    }
+
+    .PFPHunks div.Third{
+        width:290px;
+        height:290px;
+        left:320px;
+        top:335px;
+    }
+}
+
+@media (max-width:1130px){
+    .PFPHunks div.First{
+        width:210px;
+        height:210px;
+        left:75px;
+        top:455px;
+    }
+
+    .PFPHunks div.Second{
+        width:230px;
+        height:230px;
+        left:130px;
+        top:215px;
+    }
+
+    .PFPHunks div.Third{
+        width:270px;
+        height:270px;
+        left:280px;
+        top:335px;
+    }
+}
+
+@media (max-width:1000px){
+    .PFPHunks .Gallery{
+        width:55%;
+    }
+    
+    .PFPHunks div.First{
+        width:190px;
+        height:190px;
+        left:45px;
+        top:230px;
+    }
+
+    .PFPHunks div.Second{
+        width:210px;
+        height:210px;
+        left:100px;
+        top:25px;
+    }
+
+    .PFPHunks div.Third{
+        width:250px;
+        height:250px;
+        left:235px;
+        top:115px;
+    }
+}
+
+@media (max-width:750px){
+    .PFPHunks .Gallery{
+        margin-top:40px;
+        width:62%;
+    }
+    .PFPHunks div.First{
+        left:15px;
+    }
+
+    .PFPHunks div.Second{
+        left:70px;
+    }
+
+    .PFPHunks div.Third{
+        left:205px;
+    }
+}
+
+@media (max-width:600px){
+    .PFPHunks .Gallery{
+        width:70%;
+    }
+}
+
+@media (max-width:570px){
+    .PFPHunks .Gallery{
+        width:85%;
+    }
+}
+
+@media (max-width:515px){
+    .PFPHunks .Gallery{
+        width:90%;
+    }
+}
+
+@media (max-width:500px){
+    .PFPHunks div.First{
+        width:185px;
+        height:185px;
+        left:45px;
+        top:185px;
+    }
+
+    .PFPHunks div.Second{
+        width:185px;
+        height:185px;
+        left:95px;
+    }
+
+    .PFPHunks div.Third{
+        width:185px;
+        height:185px;
+        left:180px;
+        top:160px;
+    }
+}
+
+@media (max-width:450px){
+    .PFPHunks div.First{
+        left:15px;
+    }
+
+    .PFPHunks div.Second{
+        left:75px;
+    }
+
+    .PFPHunks div.Third{
+        left:180px;
+        top:160px;
+    }
+}
+
+@media (max-width:400px){
+    .PFPHunks div.First{
+        left:10px;
+        width:165px;
+        height:165px;
+        top:180px;
+    }
+
+    .PFPHunks div.Second{
+        width:165px;
+        height:165px;
+    }
+
+    .PFPHunks div.Third{
+        width:165px;
+        height:165px;
+        left:160px;
+    }
+}
+
+@media (max-width:355px){
+    .PFPHunks div.First{
+        width:155px;
+        height:155px;
+        left:0;
+    }
+
+    .PFPHunks div.Second{
+        width:155px;
+        height:155px;
+        left:50px;
+    }
+
+    .PFPHunks div.Third{
+        width:155px;
+        height:155px;
+        left:130px;
+    }
+}
+
+
+@media (max-height:750px) and (min-width:1000px){
+    .PFPHunks div.First{
+        top:410px;
+    }
+
+    .PFPHunks div.Second{
+        top:175px;
+    }
+
+    .PFPHunks div.Third{
+        top:270px;
+    }
+}
+

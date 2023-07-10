@@ -1,0 +1,70 @@
+.PFPHunks{
+    width:100%;
+    height:100vh;
+    min-height:840px;
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    justify-content:center;
+    overflow:visible;
+}
+
+.PFPHunks .Draggable{
+    right:5%;
+    top:8%;
+    position:absolute;
+}
+
+.PFPHunks .Draggable.Two{
+    right:10%;
+    top:70%;
+    position:absolute;
+}
+
+@media (max-width:1500px){
+    .PFPHunks .Draggable.Two{
+        right:6%;
+        top:74%;
+    }
+}
+
+@media (max-width:1300px){
+    .PFPHunks .Draggable{
+        display: none;
+    }
+    
+    .PFPHunks .Draggable.Two{
+        display: none;
+    }
+}
+
+@media (max-width:1000px){
+    .PFPHunks{
+        flex-direction:column-reverse;
+        align-items:center;
+        height:1000px;
+    }
+}
+
+@media (max-width:600px){
+    .PFPHunks{
+        height:1050px;
+    }
+}
+
+@media (max-width:500px){
+    .PFPHunks{
+        height:1100px;
+        background-color: #97A5FF;
+    }
+}
+
+@media (max-height: 600px){
+    .PFPHunks .Draggable{
+        display: none;
+    }
+    
+    .PFPHunks .Draggable.Two{
+        display: none;
+    }
+}

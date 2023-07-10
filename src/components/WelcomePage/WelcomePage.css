@@ -1,0 +1,14 @@
+.WelcomePage{
+    min-width:280px;
+    min-height:500px;
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+@media (max-width:500px){
+    .WelcomePage{
+        background-color: #97A5FF;
+    }
+}
