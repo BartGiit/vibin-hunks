@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {FaDiscord,FaInstagram,FaTwitter} from 'react-icons/fa';
 import './SocialMedia.css';
 import desktopPleaseImage from '../../../src/images/text/desktopPlease.svg';
@@ -7,9 +7,7 @@ import mobileDoItImage from '../../../src/images/text/mobileDoIt.svg';
 import desktopYouKnowImage from '../../../src/images/text/desktopYouKnow.svg';
 import logo from '../../../src/images/logoNoShadow.svg';
 
-export const SocialMedia = ({ onHeightChange }: { onHeightChange: (distance: number) => void }) => {
-  
-  const [isMobile, setIsMobile] = useState(false);
+export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,23 +24,6 @@ export const SocialMedia = ({ onHeightChange }: { onHeightChange: (distance: num
       window.removeEventListener('scroll', handleScroll);
     };
   },);
-
-
-  // Checks if mobile view
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 550);
-    };
-
-    handleResize(); // Set initial state
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
     return (
       <div className={"SocialMedia"}>
@@ -61,7 +42,7 @@ export const SocialMedia = ({ onHeightChange }: { onHeightChange: (distance: num
               <img src={logo} alt="Vibin Hunks Collection Logo" />
             </div>
             <img className="textSVG" src={desktopPleaseImage} alt="Hunks Social Media NFT"/>
-            {isMobile ? (<img src={mobileDoItImage} className={"textSVGsecond"} alt="Hunks Social Media NFT" />) : (<img src={desktopDoItImage} className={"textSVGsecond"} alt="Hunks Social Media NFT" />)}
+            {Mobile ? (<img src={mobileDoItImage} className={"textSVGsecond"} alt="Hunks Social Media NFT" />) : (<img src={desktopDoItImage} className={"textSVGsecond"} alt="Hunks Social Media NFT" />)}
           </div>
         </div>
         <div className="Image">

@@ -80,6 +80,17 @@
     display:none;
 }
 
+.NavBar .NavImg .BackGround{
+    position:absolute;
+    width:100vw;
+    height:180%;
+    backdrop-filter: blur(10px);
+    margin-top:-26px;
+    z-index:-1;
+    opacity:0;
+    transition:0.8s;
+}
+
 @media (max-width: 1060px){
     .NavBar .NavList{
         margin-right:20px;
@@ -127,12 +138,7 @@
     }
 
     .NavBar .NavImg .BackGround.Active{
-        position:absolute;
-        width:100vw;
-        height:180%;
-        backdrop-filter: blur(10px);
-        margin-top:-26px;
-        z-index:-1;
+        opacity:1;
     }
 
     .NavBar .NavList{
@@ -265,5 +271,14 @@
 
     .NavBar .NavList{
         display:none;
+    }
+}
+
+@supports (-webkit-touch-callout:none){
+
+    @media (max-width: 750px){
+        .NavBar .NavList .SmallLogo{
+            margin-bottom:66px;
+        }
     }
 }

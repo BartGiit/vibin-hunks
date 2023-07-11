@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Creators } from './components/Creators/Creators';
 import { Hunks10k } from './components/Hunks10k/Hunks10k';
 import { PFPHunks } from './components/PFPHunks/PFPHunks';
@@ -8,10 +8,27 @@ import { Background } from './components/Utils/Background';
 
 export const App = () => {
   const [distanceFromBottom, setDistanceFromBottom] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleHeightChange = (distance: any) => {
     setDistanceFromBottom(distance);
   };
+
+  // Checks if mobile view
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 550);
+    };
+
+    handleResize(); // Set initial state
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div style = {{  position: "relative", overflow: "hidden",}}>
@@ -19,8 +36,8 @@ export const App = () => {
       <Hunks10k/>
       <PFPHunks/>
       <Creators/>
-      <SocialMedia onHeightChange={handleHeightChange} />
-      <Background fullHeight={distanceFromBottom}/>
+      <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />
+      {isMobile ? null : (<Background fullHeight={distanceFromBottom}/>)}
     </div>
   );
 };
