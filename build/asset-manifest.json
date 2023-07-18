@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.ae597a3e.css",
-    "main.js": "/vibin-hunks/static/js/main.7d619adb.js",
+    "main.js": "/vibin-hunks/static/js/main.7da8627a.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-slide2.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide2.3bc3dd6beb2f1d9c8a5f.webm",
     "static/media/Vibin-Hunks-Slide3.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide3.1835b833b8f46351b34c.gif",
-    "static/media/Amor.mov": "/vibin-hunks/static/media/Amor.ea76cbb7bdcc5a315287.mov",
     "static/media/Vibin-Hunks-Slide6.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide6.e6acb01626260579e797.gif",
     "static/media/Vibin-Hunks-Slide5.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide5.f5cacd9c2aefd44b9f75.gif",
     "static/media/Vibin-Hunks-Slide1.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide1.767d862c4f663db2f694.gif",
@@ -14,6 +13,7 @@
     "static/media/Vibin-Hunks-slide4.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide4.ee0efae9ad2b5cfca836.webm",
     "static/media/Vibin-Hunks-slide3.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide3.a9966c8e0087cae7c681.webm",
     "static/media/Vibin-Hunks-Slide2.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide2.8cd1cbeb66ddaf13670e.gif",
+    "static/media/Amor.webm": "/vibin-hunks/static/media/Amor.a099536209bcf4314dd2.webm",
     "static/media/3-4-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/3-4-Vibin-Hunks-Profile.01d94258895f0746bfef.png",
     "static/media/3-3-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/3-3-Vibin-Hunks-Profile.64e956c6ce6f0242eff0.png",
     "static/media/2-1-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/2-1-Vibin-Hunks-Profile.e1deef615f09c22dc519.png",
@@ -46,11 +46,11 @@
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
     "index.html": "/vibin-hunks/index.html",
     "main.ae597a3e.css.map": "/vibin-hunks/static/css/main.ae597a3e.css.map",
-    "main.7d619adb.js.map": "/vibin-hunks/static/js/main.7d619adb.js.map",
+    "main.7da8627a.js.map": "/vibin-hunks/static/js/main.7da8627a.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae597a3e.css",
-    "static/js/main.7d619adb.js"
+    "static/js/main.7da8627a.js"
   ]
 }

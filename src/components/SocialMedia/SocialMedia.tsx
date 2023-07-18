@@ -49,7 +49,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
             <p>Show us your love!</p>
             <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT"/>
             <video autoPlay loop muted>
-            <source src={require(`../../../src/images/Amor.webm`)} type="video/webm" />
+            <source src={require(`../../../src/images/Amor.mov`)} type="video/mp4" />
             </video>
         </div>
       </div>
