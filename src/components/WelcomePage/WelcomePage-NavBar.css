@@ -278,7 +278,12 @@
 
     @media (max-width: 750px){
         .NavBar .NavList .SmallLogo{
-            margin-bottom:66px;
+            margin-bottom:90px;
         }
     }
+}
+
+
+@keyframes mobileFloat {
+    
 }
