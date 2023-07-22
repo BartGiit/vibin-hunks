@@ -58,6 +58,9 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
         <video autoPlay loop muted>
           <source src={videoSource()} type={/^((?!chrome|android).)*safari/i.test(navigator.userAgent) ? 'video/mp4; codecs=hevc' : 'video/webm'} />
         </video>
+        <video autoPlay loop muted>
+          <source src={require(`../../../src/images/Amor.hevc.mp4`)} type={'video/mp4; codecs=hevc'} />
+        </video>
       </div>
     </div>
   );
