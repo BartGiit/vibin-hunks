@@ -25,13 +25,6 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
     };
   }, []);
 
-  const videoSource = () => {
-    // Check if the browser is Safari
-    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-    // Use different video source based on the browser
-    return isSafari ? require(`../../../src/images/Amor.hevc.mp4`) : require(`../../../src/images/Amor.webm`);
-  };
-
   return (
     <div className={"SocialMedia"}>
       <div className="TextWrapper">
@@ -56,10 +49,8 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
         <p>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
         <video autoPlay loop muted>
-          <source src={videoSource()} type={/^((?!chrome|android).)*safari/i.test(navigator.userAgent) ? 'video/mp4; codecs=hvc1' : 'video/webm'} />
-        </video>
-        <video autoPlay loop>
-          <source src={require(`../../../src/images/Amor.h264`)} type={"video/mp4; codecs=hvc1"} />
+          <source src={require(`../../../src/images/Amor.mp4`)} type={'video/mp4; codecs=hvc1'} />
+          <source src={require(`../../../src/images/Amor.webm`)} type={'video/webm'} />
         </video>
       </div>
     </div>
