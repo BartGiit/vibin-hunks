@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.ae597a3e.css",
-    "main.js": "/vibin-hunks/static/js/main.d046101b.js",
+    "main.js": "/vibin-hunks/static/js/main.55fd8184.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-slide2.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide2.3bc3dd6beb2f1d9c8a5f.webm",
     "static/media/Vibin-Hunks-Slide3.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide3.1835b833b8f46351b34c.gif",
@@ -10,6 +10,7 @@
     "static/media/Vibin-Hunks-Slide1.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide1.767d862c4f663db2f694.gif",
     "static/media/Vibin-Hunks-slide1.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide1.ce953c114f80cf59486d.webm",
     "static/media/Vibin-Hunks-Slide4.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide4.34795eb3f5b52901bbb9.gif",
+    "static/media/Amor.h264": "/vibin-hunks/static/media/Amor.fec590cbdaacb2669017.h264",
     "static/media/Vibin-Hunks-slide4.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide4.ee0efae9ad2b5cfca836.webm",
     "static/media/Vibin-Hunks-slide3.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide3.a9966c8e0087cae7c681.webm",
     "static/media/Vibin-Hunks-Slide2.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide2.8cd1cbeb66ddaf13670e.gif",
@@ -47,11 +48,11 @@
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.c314f71f860010c0e580a59f750eae64.svg",
     "index.html": "/vibin-hunks/index.html",
     "main.ae597a3e.css.map": "/vibin-hunks/static/css/main.ae597a3e.css.map",
-    "main.d046101b.js.map": "/vibin-hunks/static/js/main.d046101b.js.map",
+    "main.55fd8184.js.map": "/vibin-hunks/static/js/main.55fd8184.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae597a3e.css",
-    "static/js/main.d046101b.js"
+    "static/js/main.55fd8184.js"
   ]
 }
