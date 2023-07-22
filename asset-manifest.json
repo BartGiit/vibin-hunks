@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.ae597a3e.css",
-    "main.js": "/vibin-hunks/static/js/main.75bd3cdf.js",
+    "main.js": "/vibin-hunks/static/js/main.01ebdbef.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-slide2.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide2.3bc3dd6beb2f1d9c8a5f.webm",
     "static/media/Vibin-Hunks-Slide3.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide3.1835b833b8f46351b34c.gif",
@@ -10,12 +10,11 @@
     "static/media/Vibin-Hunks-Slide1.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide1.767d862c4f663db2f694.gif",
     "static/media/Vibin-Hunks-slide1.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide1.ce953c114f80cf59486d.webm",
     "static/media/Vibin-Hunks-Slide4.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide4.34795eb3f5b52901bbb9.gif",
-    "static/media/Amor.h264": "/vibin-hunks/static/media/Amor.fec590cbdaacb2669017.h264",
     "static/media/Vibin-Hunks-slide4.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide4.ee0efae9ad2b5cfca836.webm",
     "static/media/Vibin-Hunks-slide3.webm": "/vibin-hunks/static/media/Vibin-Hunks-slide3.a9966c8e0087cae7c681.webm",
     "static/media/Vibin-Hunks-Slide2.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide2.8cd1cbeb66ddaf13670e.gif",
     "static/media/Amor.webm": "/vibin-hunks/static/media/Amor.a099536209bcf4314dd2.webm",
-    "static/media/Amor.hevc.mp4": "/vibin-hunks/static/media/Amor.hevc.a9d1093bf0aa0e090ab9.mp4",
+    "static/media/Amor.mp4": "/vibin-hunks/static/media/Amor.a9d1093bf0aa0e090ab9.mp4",
     "static/media/3-4-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/3-4-Vibin-Hunks-Profile.01d94258895f0746bfef.png",
     "static/media/3-3-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/3-3-Vibin-Hunks-Profile.64e956c6ce6f0242eff0.png",
     "static/media/2-1-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/2-1-Vibin-Hunks-Profile.e1deef615f09c22dc519.png",
@@ -48,11 +47,11 @@
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.c314f71f860010c0e580a59f750eae64.svg",
     "index.html": "/vibin-hunks/index.html",
     "main.ae597a3e.css.map": "/vibin-hunks/static/css/main.ae597a3e.css.map",
-    "main.75bd3cdf.js.map": "/vibin-hunks/static/js/main.75bd3cdf.js.map",
+    "main.01ebdbef.js.map": "/vibin-hunks/static/js/main.01ebdbef.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ae597a3e.css",
-    "static/js/main.75bd3cdf.js"
+    "static/js/main.01ebdbef.js"
   ]
 }
