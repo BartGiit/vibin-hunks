@@ -5,11 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-*:focus {
-outline: 0;
-outline: none;
-}
 *{
-outline: 0;
-outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
