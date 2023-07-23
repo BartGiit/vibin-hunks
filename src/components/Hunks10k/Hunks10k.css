@@ -56,7 +56,7 @@
     }
 }
 
-@media (max-width:500px){
+@media (max-width:550px){
     .Hunks10k{
         flex-direction:column;
         align-items:center;

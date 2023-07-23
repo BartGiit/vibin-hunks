@@ -228,6 +228,10 @@
 }
 
 @media (max-width: 550px){
+    .SocialMedia{
+        background-color: #97A5FF;
+    }
+    
     .textSVG{
         display:none;
     }
@@ -269,10 +273,6 @@
         width:100px;
     }
 }
-@media (max-width: 500px){
-    .SocialMedia{
-        background-color: #97A5FF;
-    }}
 
 @media (max-width: 380px){
     .SocialMedia{
