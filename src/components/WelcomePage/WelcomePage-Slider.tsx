@@ -77,21 +77,25 @@ export const Slider = () => {
           <SwiperSlide className={"SwiperSlide"} key={1}>
             <video width="100%" autoPlay loop muted key={VideoSize.dynamicWidth}>
             <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide1.webm`)} type="video/webm" />
+            {VideoSize.dynamicWidth === "mid" ? <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide1.mp4`)} type='video/mp4; codecs=hvc1'/> : null}
             </video>
           </SwiperSlide>
           <SwiperSlide className={"SwiperSlide"} key={2}>
             <video width="100%" autoPlay loop muted key={VideoSize.dynamicWidth}>
             <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide2.webm`)} type="video/webm" />
+            {VideoSize.dynamicWidth === "mid" ? <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide2.mp4`)} type='video/mp4; codecs=hvc1'/> : null}
             </video>
           </SwiperSlide>
           <SwiperSlide className={"SwiperSlide"} key={3}>
             <video width="100%" autoPlay loop muted key={VideoSize.dynamicWidth}>
             <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide3.webm`)} type="video/webm" />
+            {VideoSize.dynamicWidth === "mid" ? <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide3.mp4`)} type='video/mp4; codecs=hvc1'/> : null}
             </video>
           </SwiperSlide>
           <SwiperSlide className={"SwiperSlide"} key={4}>
             <video width="100%" autoPlay loop muted key={VideoSize.dynamicWidth}>
             <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide4.webm`)} type="video/webm" />
+            {VideoSize.dynamicWidth === "mid" ? <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide4.mp4`)} type='video/mp4; codecs=hvc1'/> : null}
             </video>
           </SwiperSlide>
           <img src={logo} alt="Logo Vibin Hunks" />
