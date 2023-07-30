@@ -4,14 +4,30 @@ import * as THREE from 'three';
 const VideoCanvas: React.FC = () => {
   const mount = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const playButtonRef = useRef<HTMLButtonElement>(null); // New button ref
   const animationId = useRef<number | null>(null);
+
+  const handlePlayButtonClick = () => {
+    if (videoRef.current) {
+      let playPromise = videoRef.current.play();
+
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          if (playButtonRef.current) {
+            playButtonRef.current.style.display = 'none';
+          }
+        }).catch(error => {
+          console.error("Failed to play video: ", error);
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     if (!mount.current || !videoRef.current) return;
 
     const { width, height } = mount.current.getBoundingClientRect();
 
-    // Calculate width based on the aspect ratio
     const desiredAspectRatio = 1380 / 948;
     const computedWidth = height * desiredAspectRatio;
 
@@ -82,7 +98,11 @@ const VideoCanvas: React.FC = () => {
       animationId.current = requestAnimationFrame(animate);
     };
 
-    videoRef.current.addEventListener("loadedmetadata", () => videoRef.current?.play());
+    videoRef.current.addEventListener("loadedmetadata", () => {
+      if (playButtonRef.current) {
+        playButtonRef.current.style.display = 'block';
+      }
+    });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -122,12 +142,17 @@ const VideoCanvas: React.FC = () => {
       }
 
       window.removeEventListener('resize', handleResize);
+
+      if (playButtonRef.current) {
+        playButtonRef.current.style.display = 'none';
+      }
     };
   }, []);
 
   return (
     <div ref={mount} style={{ transform: 'rotate(180deg) scaleX(-1)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow:"visible", height: '100%' }}>
       <video ref={videoRef} style={{ display: 'none' }} />
+      <button ref={playButtonRef} style={{ display: 'none' }} onClick={handlePlayButtonClick}>Play Video</button> {/* New button */}
     </div>
   );
 };
