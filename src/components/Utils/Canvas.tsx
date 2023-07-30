@@ -82,10 +82,7 @@ const VideoCanvas: React.FC = () => {
       animationId.current = requestAnimationFrame(animate);
     };
 
-    videoRef.current.addEventListener("loadedmetadata", () => {
-      videoRef.current?.load();
-      videoRef.current?.play();
-    });
+    videoRef.current.addEventListener("loadedmetadata", () => videoRef.current?.play());
 
     const observer = new IntersectionObserver(
       (entries) => {
