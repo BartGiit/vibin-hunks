@@ -32,6 +32,7 @@ export const App = () => {
 
   return (
     <div style = {{  position: "relative", overflow: "hidden",}}>
+      <video src={require("./images/mid/video.mp4")} style={{width:"100px", height:"100px"}}></video>
       <WelcomePage/>
       <Hunks10k/>
       <PFPHunks/>
