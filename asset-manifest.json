@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.98c30561.css",
-    "main.js": "/vibin-hunks/static/js/main.735470d5.js",
+    "main.js": "/vibin-hunks/static/js/main.343e097d.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-Slide3.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide3.1835b833b8f46351b34c.gif",
     "static/media/Vibin-Hunks-Slide6.gif": "/vibin-hunks/static/media/Vibin-Hunks-Slide6.e6acb01626260579e797.gif",
@@ -23,7 +23,7 @@
     "static/media/1-2-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/1-2-Vibin-Hunks-Profile.efcedd13666a6e38744c.png",
     "static/media/1-1-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/1-1-Vibin-Hunks-Profile.46d69e8f549e5f435ab5.png",
     "static/media/1-4-Vibin-Hunks-Profile.png": "/vibin-hunks/static/media/1-4-Vibin-Hunks-Profile.38d44fd2fafda1113f99.png",
-    "static/media/video.mp4": "/vibin-hunks/static/media/video.2caea179fb015216fc89.mp4",
+    "static/media/video.mp4": "/vibin-hunks/static/media/video.684b65d4453bc2be8c8e.mp4",
     "static/media/desktopCreators.svg": "/vibin-hunks/static/media/desktopCreators.c69d5988441ce9ef5ecbc2e786b7566e.svg",
     "static/media/desktopYouKnow.svg": "/vibin-hunks/static/media/desktopYouKnow.4885c3eb7e013051eeb84a8c193b6dda.svg",
     "static/media/desktopReps.svg": "/vibin-hunks/static/media/desktopReps.e5f635913fefe6dd30aaba6258a5904e.svg",
@@ -44,11 +44,11 @@
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
     "index.html": "/vibin-hunks/index.html",
     "main.98c30561.css.map": "/vibin-hunks/static/css/main.98c30561.css.map",
-    "main.735470d5.js.map": "/vibin-hunks/static/js/main.735470d5.js.map",
+    "main.343e097d.js.map": "/vibin-hunks/static/js/main.343e097d.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98c30561.css",
-    "static/js/main.735470d5.js"
+    "static/js/main.343e097d.js"
   ]
 }
