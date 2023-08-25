@@ -1,7 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 
-const VideoCanvas: React.FC = () => {
+interface CanvasProps {
+  videoNumber: string;
+}
+// @ts-ignore
+const VideoCanvas: React.FC<CanvasProps> = (props: CanvasProps) => {
   const mount = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const animationId = useRef<number | null>(null);
@@ -36,12 +40,14 @@ const VideoCanvas: React.FC = () => {
 
     window.addEventListener('resize', handleResize);
 
-    videoRef.current.src = require('../../images/mid/video.mp4');
+    videoRef.current.src = require(`../../images/mid/Vibin-Hunks-slide${props.videoNumber}.mp4`);
     videoRef.current.crossOrigin = "Anonymous";
     videoRef.current.loop = true;
     videoRef.current.muted = true;
     videoRef.current.playsInline = true;
-    document.body.appendChild(videoRef.current);
+    if (videoRef.current && !document.body.contains(videoRef.current)) {
+      mount.current.appendChild(videoRef.current);
+    }
 
     const texture = new THREE.VideoTexture(videoRef.current);
     texture.minFilter = THREE.LinearFilter;
@@ -117,13 +123,13 @@ const VideoCanvas: React.FC = () => {
 
       mount.current?.removeChild(renderer.domElement);
 
-      if (videoRef.current && document.body.contains(videoRef.current)) {
-        document.body.removeChild(videoRef.current);
+      if (videoRef.current && mount.current && mount.current.contains(videoRef.current)) {
+        mount.current.removeChild(videoRef.current);
       }
 
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+}, []);
 
   return (
     <div ref={mount} style={{ transform: 'rotate(180deg) scaleX(-1)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow:"visible", height: '100%' }}>

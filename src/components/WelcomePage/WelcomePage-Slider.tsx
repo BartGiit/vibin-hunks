@@ -10,6 +10,33 @@ import VideoCanvas from '../Utils/Canvas';
 
 export const Slider = () => {
 
+  const [swiperBackgroundColor, setSwiperBackgroundColor] = useState("#96a5fe");
+
+  const handleVideoLoad = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
+    const video = e.currentTarget; // Access currentTarget for strong typing
+
+    // Create a temporary canvas
+    const canvas = document.createElement('canvas');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return; // Exit if context is not available
+
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    // Get color data of the first pixel
+    const firstPixelData = ctx.getImageData(0, 0, 1, 1).data;
+
+    const bgColor = `rgb(${firstPixelData[0]}, ${firstPixelData[1]}, ${firstPixelData[2]})`;
+
+    // Set the background
+    // Here you would set the state or however you manage the background color in React
+    setSwiperBackgroundColor(bgColor);
+}
+
+
+
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
     dynamicWidth: window.innerWidth,
@@ -66,6 +93,7 @@ export const Slider = () => {
     <>
       <Swiper
         className={"Slider"}
+        style={VideoSize.dynamicWidth === "small" ? {backgroundColor: swiperBackgroundColor} : {}}
         navigation={true}
         modules={[Navigation, Autoplay]}
         loop={true}
@@ -77,34 +105,43 @@ export const Slider = () => {
           disableOnInteraction: false,
         }}
       > 
-         <SwiperSlide className={"SwiperSlide"} key={1}>
-         <VideoCanvas />
-            {/* {VideoSize.dynamicWidth === "mid" ? <VideoCanvas /> :
-            <video width="100%" autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
-              <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide1.webm`)} type='video/webm'/>
-            </video>} */}
+        <SwiperSlide className={"SwiperSlide"} key={1}>
+            {VideoSize.dynamicWidth === "small" ?
+                <video onLoadedData={handleVideoLoad} autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                    <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
+                </video>
+                :
+                <VideoCanvas videoNumber="1"/>
+            }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={2}>
-        <VideoCanvas />
-            {/* {VideoSize.dynamicWidth === "mid" ? <VideoCanvas /> :
-            <video width="100%" autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
-              <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide2.webm`)} type='video/webm'/>
-            </video>} */}
+            {VideoSize.dynamicWidth === "small" ?
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                    <source src={require("../../../src/images/small/Vibin-Hunks-slide2.mp4")} type='video/mp4'/>
+                </video>
+                :
+                <VideoCanvas videoNumber="2"/>
+            }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={3}>
-        <VideoCanvas />
-            {/* {VideoSize.dynamicWidth === "mid" ? <VideoCanvas /> :
-            <video width="100%" autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
-              <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide3.webm`)} type='video/webm'/>
-            </video>} */}
+            {VideoSize.dynamicWidth === "small" ?
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                    <source src={require("../../../src/images/small/Vibin-Hunks-slide3.mp4")} type='video/mp4'/>
+                </video>
+                :
+                <VideoCanvas videoNumber="3"/>
+            }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={4}>
-          <VideoCanvas />
-            {/* {VideoSize.dynamicWidth === "mid" ? <VideoCanvas /> :
-            <video width="100%" autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
-              <source src={require(`../../../src/images/${VideoSize.dynamicWidth}/Vibin-Hunks-slide4.webm`)} type='video/webm'/>
-            </video>} */}
+            {VideoSize.dynamicWidth === "small" ?
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                    <source src={require("../../../src/images/small/Vibin-Hunks-slide4.mp4")} type='video/mp4'/>
+                </video>
+                :
+                <VideoCanvas videoNumber="4"/>
+            }
         </SwiperSlide>
+
         <img src={logo} alt="Logo Vibin Hunks" />
       </Swiper>
     </>

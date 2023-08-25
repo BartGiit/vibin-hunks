@@ -74,6 +74,14 @@
         height:29%;
         bottom:8%;
     }
+
+    .Slider video{
+        height:86vh;
+        object-fit: cover;
+        overflow: visible;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 @media (max-width:300px){
