@@ -104,9 +104,9 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
-                <VideoCanvas size="mid" videoNumber="1"/>
+                <VideoCanvas size="mid" videoNumber="1" key={"mid-1"}/>
                 :
-                <VideoCanvas size="big" videoNumber="1"/>
+                <VideoCanvas size="big" videoNumber="1" key={"big-1"}/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={2}>
@@ -115,9 +115,9 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide2.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
-                <VideoCanvas size="mid" videoNumber="2"/>
+                <VideoCanvas size="mid" videoNumber="2" key={"mid-2"}/>
                 :
-                <VideoCanvas size="big" videoNumber="2"/>
+                <VideoCanvas size="big" videoNumber="2" key={"big-2"}/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={3}>
@@ -126,9 +126,9 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide3.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
-                <VideoCanvas size="mid" videoNumber="3"/>
+                <VideoCanvas size="mid" videoNumber="3" key={"mid-3"}/>
                 :
-                <VideoCanvas size="big" videoNumber="3"/>
+                <VideoCanvas size="big" videoNumber="3" key={"big-3"}/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={4}>
@@ -137,9 +137,9 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide4.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
-                <VideoCanvas size="mid" videoNumber="4"/>
+                <VideoCanvas size="mid" videoNumber="4" key={"mid-4"}/>
                 :
-                <VideoCanvas size="big" videoNumber="4"/>
+                <VideoCanvas size="big" videoNumber="4" key={"big-4"}/>
             }
         </SwiperSlide>
 
