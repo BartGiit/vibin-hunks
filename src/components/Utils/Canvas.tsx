@@ -3,6 +3,7 @@ import * as THREE from 'three';
 
 interface CanvasProps {
   videoNumber: string;
+  size: string;
 }
 // @ts-ignore
 const VideoCanvas: React.FC<CanvasProps> = (props: CanvasProps) => {
@@ -16,7 +17,8 @@ const VideoCanvas: React.FC<CanvasProps> = (props: CanvasProps) => {
     const { width, height } = mount.current.getBoundingClientRect();
 
     // Calculate width based on the aspect ratio
-    const desiredAspectRatio = 1380 / 948;
+    let desiredAspectRatio:any;
+    props.size === "mid" ? desiredAspectRatio = 1380 / 948 : desiredAspectRatio = 2200 / 948;
     const computedWidth = height * desiredAspectRatio;
 
     const scene = new THREE.Scene();
@@ -40,7 +42,7 @@ const VideoCanvas: React.FC<CanvasProps> = (props: CanvasProps) => {
 
     window.addEventListener('resize', handleResize);
 
-    videoRef.current.src = require(`../../images/mid/Vibin-Hunks-slide${props.videoNumber}.mp4`);
+    videoRef.current.src = require(`../../images/${props.size}/Vibin-Hunks-slide${props.videoNumber}.mp4`);
     videoRef.current.crossOrigin = "Anonymous";
     videoRef.current.loop = true;
     videoRef.current.muted = true;
@@ -77,7 +79,8 @@ const VideoCanvas: React.FC<CanvasProps> = (props: CanvasProps) => {
       transparent: true,
     });
 
-    const planeGeometry = new THREE.PlaneGeometry(13.8, 9.5, 1);
+    let planeGeometry;
+    props.size === "mid" ? planeGeometry = new THREE.PlaneGeometry(13.8, 9.5, 1) : planeGeometry = new THREE.PlaneGeometry(22, 9.5, 1);
     const videoMesh = new THREE.Mesh(planeGeometry, videoMaterial);
     scene.add(videoMesh);
 

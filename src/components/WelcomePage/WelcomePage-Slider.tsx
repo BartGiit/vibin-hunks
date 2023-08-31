@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { Dispatch, SetStateAction, useState, useEffect} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Autoplay} from 'swiper';
 import logo from '../../../src/images/logo.svg';
@@ -8,9 +8,16 @@ import './WelcomePage-Slider.css';
 import VideoCanvas from '../Utils/Canvas';
 
 
-export const Slider = () => {
+type SliderProps = {
+  setSwiperBackgroundColor: Dispatch<SetStateAction<string>>;
+  VideoSize: {
+    dynamicWidth: string;
+  };
+  setVideoSize: Dispatch<SetStateAction<{ dynamicWidth: string }>>;
+};
 
-  const [swiperBackgroundColor, setSwiperBackgroundColor] = useState("#96a5fe");
+export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoSize, setVideoSize }) => {
+
 
   const handleVideoLoad = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
     const video = e.currentTarget; // Access currentTarget for strong typing
@@ -31,25 +38,14 @@ export const Slider = () => {
     const bgColor = `rgb(${firstPixelData[0]}, ${firstPixelData[1]}, ${firstPixelData[2]})`;
 
     // Set the background
-    // Here you would set the state or however you manage the background color in React
     setSwiperBackgroundColor(bgColor);
 }
-
 
 
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
     dynamicWidth: window.innerWidth,
   });
-
-  const [VideoSize, setVideoSize] = useState(
-    window.innerWidth>1060 ? 
-    {dynamicWidth: "big"} : 
-    window.innerWidth>550 ? 
-    {dynamicWidth:"mid"} : 
-    {dynamicWidth:"small"}
-    );
-
 
   // set WindowWidth, VideoSize
   const setWidthWindow = () => {
@@ -76,24 +72,21 @@ export const Slider = () => {
 
   // useEffect checking WindowWidth changes
   useEffect(() => {
-    window.addEventListener('resize', setWidthWindow);
-    return(() => {
-        window.removeEventListener('resize', setWidthWindow);
-    })
-  }, [WindowWidth])
+    const handleResize = () => {
+        setWidthWindow();
+        setVideo();
+    };
 
-  useEffect(() => {
-    window.addEventListener('resize', setVideo);
-    return(() => {
-        window.removeEventListener('resize', setVideo);
-    })
-  }, [VideoSize])
+    window.addEventListener('resize', handleResize);
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+}, []);
 
   return (
     <>
       <Swiper
         className={"Slider"}
-        style={VideoSize.dynamicWidth === "small" ? {backgroundColor: swiperBackgroundColor} : {}}
         navigation={true}
         modules={[Navigation, Autoplay]}
         loop={true}
@@ -110,8 +103,10 @@ export const Slider = () => {
                 <video onLoadedData={handleVideoLoad} autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
+                : VideoSize.dynamicWidth === "mid" ?
+                <VideoCanvas size="mid" videoNumber="1"/>
                 :
-                <VideoCanvas videoNumber="1"/>
+                <VideoCanvas size="big" videoNumber="1"/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={2}>
@@ -119,8 +114,10 @@ export const Slider = () => {
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide2.mp4")} type='video/mp4'/>
                 </video>
+                : VideoSize.dynamicWidth === "mid" ?
+                <VideoCanvas size="mid" videoNumber="2"/>
                 :
-                <VideoCanvas videoNumber="2"/>
+                <VideoCanvas size="big" videoNumber="2"/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={3}>
@@ -128,8 +125,10 @@ export const Slider = () => {
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide3.mp4")} type='video/mp4'/>
                 </video>
+                : VideoSize.dynamicWidth === "mid" ?
+                <VideoCanvas size="mid" videoNumber="3"/>
                 :
-                <VideoCanvas videoNumber="3"/>
+                <VideoCanvas size="big" videoNumber="3"/>
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={4}>
@@ -137,8 +136,10 @@ export const Slider = () => {
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide4.mp4")} type='video/mp4'/>
                 </video>
+                : VideoSize.dynamicWidth === "mid" ?
+                <VideoCanvas size="mid" videoNumber="4"/>
                 :
-                <VideoCanvas videoNumber="4"/>
+                <VideoCanvas size="big" videoNumber="4"/>
             }
         </SwiperSlide>
 
