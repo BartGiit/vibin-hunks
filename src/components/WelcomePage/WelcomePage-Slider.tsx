@@ -41,11 +41,37 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
     setSwiperBackgroundColor(bgColor);
 }
 
-
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
     dynamicWidth: window.innerWidth,
   });
+
+  //set SpaceBetween
+  const calculateInitialSpace = () => {
+    if (window.innerHeight <= 1100) {
+      if (window.innerWidth > 1400) {
+        return 100;
+      } else if (window.innerWidth > 600) {
+        return 620;
+      } else {
+        return 260;
+      }
+    } else {
+      if (window.innerWidth > 1400) {
+        return 800;
+      } else if (window.innerWidth > 600) {
+        return 620;
+      } else {
+        return 260;
+      }
+    }
+  };
+  
+  const [SpaceBetween, SetSpaceBetween] = useState(calculateInitialSpace);
+
+  const setSpace = () => {
+    SetSpaceBetween(calculateInitialSpace());
+  };
 
   // set WindowWidth, VideoSize
   const setWidthWindow = () => {
@@ -55,18 +81,34 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
   }
 
   const setVideo = () => {
-    if (window.innerWidth > 1060){
-      setVideoSize({
-        dynamicWidth: "big",
-      })
-    }else if(window.innerWidth > 550){
-      setVideoSize({
-        dynamicWidth: "mid",
-      })
+    if(window.innerHeight <= 1100){
+      if (window.innerWidth > 1060){
+        setVideoSize({
+          dynamicWidth: "big",
+        })
+      }else if(window.innerWidth > 550){
+        setVideoSize({
+          dynamicWidth: "mid",
+        })
+      }else{
+        setVideoSize({
+          dynamicWidth: "small",
+        })
+      }
     }else{
-      setVideoSize({
-        dynamicWidth: "small",
-      })
+      if (window.innerWidth > 1780){
+        setVideoSize({
+          dynamicWidth: "big",
+        })
+      }else if(window.innerWidth > 550){
+        setVideoSize({
+          dynamicWidth: "mid",
+        })
+      }else{
+        setVideoSize({
+          dynamicWidth: "small",
+        })
+      }
     }
   }
 
@@ -75,6 +117,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
     const handleResize = () => {
         setWidthWindow();
         setVideo();
+        setSpace();
     };
 
     window.addEventListener('resize', handleResize);
@@ -90,8 +133,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
         navigation={true}
         modules={[Navigation, Autoplay]}
         loop={true}
-        spaceBetween={
-          WindowWidth.dynamicWidth>1400 ? 100 : WindowWidth.dynamicWidth>600? 620 : 260}
+        spaceBetween={SpaceBetween}
         speed={750}
         autoplay={{
           delay: 7500,
