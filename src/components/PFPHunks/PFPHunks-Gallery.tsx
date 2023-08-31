@@ -56,9 +56,9 @@ export const Gallery = () => {
 
     return (
       <div className={"Gallery"}>
-        <div className="First" style={{zIndex:index[0], backgroundImage: `url(${require("../../../src/images/PFPHunks/1-" + image.First + "-Vibin-Hunks-Profile.png")})`}} onClick={handleClick}></div>
-        <div className="Second" style={{zIndex:index[1], backgroundImage: `url(${require("../../../src/images/PFPHunks/2-" + image.Second + "-Vibin-Hunks-Profile.png")})`}} onClick={handleClick}></div>
-        <div className="Third" style={{zIndex:index[2], backgroundImage: `url(${require("../../../src/images/PFPHunks/3-" + image.Third + "-Vibin-Hunks-Profile.png")})`}} onClick={handleClick}></div>
+        <div className="First" style={{zIndex:index[0], backgroundImage: `url(${require("../../../src/images/PFPHunks/1-" + image.First + "-Vibin-Hunks-Profile.jpeg")})`}} onClick={handleClick}></div>
+        <div className="Second" style={{zIndex:index[1], backgroundImage: `url(${require("../../../src/images/PFPHunks/2-" + image.Second + "-Vibin-Hunks-Profile.jpeg")})`}} onClick={handleClick}></div>
+        <div className="Third" style={{zIndex:index[2], backgroundImage: `url(${require("../../../src/images/PFPHunks/3-" + image.Third + "-Vibin-Hunks-Profile.jpeg")})`}} onClick={handleClick}></div>
       </div>
     );
   }

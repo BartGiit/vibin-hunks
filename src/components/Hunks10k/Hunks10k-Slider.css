@@ -20,6 +20,10 @@
     border-radius:38px;
 }
 
+.Hunks10k .swiper-slide video{
+    height:100%;
+}
+
 @media(max-width:1650px){
     .Hunks10k .Slider{
         padding-right:20px;

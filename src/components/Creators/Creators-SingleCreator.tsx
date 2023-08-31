@@ -33,7 +33,7 @@ export const SingleCreator = (props: SingleCreatorProps) => {
               duration: 7,
               repeat: Infinity,
             }}>
-            <div className="Image" style={{backgroundImage: `url(${require("../../../src/images/PFPHunks/1-" + `${props.image}` + "-Vibin-Hunks-Profile.png")})`}}></div>
+            <div className="Image" style={{backgroundImage: `url(${require("../../../src/images/PFPHunks/1-" + `${props.image}` + "-Vibin-Hunks-Profile.jpeg")})`}}></div>
             <p className="Signature">@{props.signature}</p>
         </motion.div>
         <div className="Info">

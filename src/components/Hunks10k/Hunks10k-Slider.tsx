@@ -24,7 +24,12 @@ export const Slider = () => {
             }}
             className="mySwiper"
          >
-         {Slides.map(slide => <SwiperSlide key={slide} style={{backgroundImage: `url(${require(`../../../src/images/Hunks10k/Vibin-Hunks-Slide${slide}.gif`)})`, backgroundSize:"contain"}}></SwiperSlide>) }
+         {Slides.map(slide => 
+            <SwiperSlide key={slide}>
+               <video autoPlay loop muted playsInline>
+                    <source src={require(`../../../src/images/Hunks10k/Vibin-Hunks-Slide${slide}.mp4`)} type='video/mp4'/>
+               </video>
+            </SwiperSlide>) }
          </Swiper>
          </div>
        </>
