@@ -7,7 +7,7 @@ import './WelcomePage.css';
 export const WelcomePage = () => {
   const [swiperBackgroundColor, setSwiperBackgroundColor] = useState("#96a5fe");
   const [VideoSize, setVideoSize] = useState(
-    window.innerWidth > 1060 ?
+    window.innerWidth > 1220 ?
       { dynamicWidth: "big" } :
       window.innerWidth > 550 ?
         { dynamicWidth: "mid" } :

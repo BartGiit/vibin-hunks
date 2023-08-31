@@ -66,7 +66,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
       }
     }
   };
-  
+
   const [SpaceBetween, SetSpaceBetween] = useState(calculateInitialSpace);
 
   const setSpace = () => {
@@ -82,7 +82,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
 
   const setVideo = () => {
     if(window.innerHeight <= 1100){
-      if (window.innerWidth > 1060){
+      if (window.innerWidth > 1220){
         setVideoSize({
           dynamicWidth: "big",
         })
