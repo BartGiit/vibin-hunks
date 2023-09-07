@@ -31,7 +31,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div style = {{  position: "relative", overflow: "hidden",}}>
+    <div className="safe-area-container" style = {{  position: "relative", overflow: "hidden",}}>
       <WelcomePage/>
       <Hunks10k/>
       <PFPHunks/>
