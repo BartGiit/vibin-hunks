@@ -142,7 +142,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
       > 
         <SwiperSlide className={"SwiperSlide"} key={1}>
             {VideoSize.dynamicWidth === "small" ?
-                <video onLoadedData={handleVideoLoad} autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video onCanPlay={handleVideoLoad} autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
