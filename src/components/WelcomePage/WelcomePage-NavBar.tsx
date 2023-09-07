@@ -14,36 +14,36 @@ export const NavBar = () => {
 
      //Function that adds blur
 
-     useEffect(() => {
-          const handleScroll = () => {
-            if (window.scrollY > 40) {
-              setScrollActive(true);
-            } else {
-              setScrollActive(false);
-            }
-          };
+    //  useEffect(() => {
+    //       const handleScroll = () => {
+    //         if (window.scrollY > 40) {
+    //           setScrollActive(true);
+    //         } else {
+    //           setScrollActive(false);
+    //         }
+    //       };
       
-          window.addEventListener('scroll', handleScroll);
+    //       window.addEventListener('scroll', handleScroll);
       
-          return () => {
-            window.removeEventListener('scroll', handleScroll);
-          };
-        }, []);
+    //       return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //       };
+    //     }, []);
       
 
      // Blocks scroll when menu open
 
-     useEffect(() => {
-          if (isMenuOpen) {
-            disableBodyScroll(document.body);
-          } else {
-            enableBodyScroll(document.body);
-          }
+    //  useEffect(() => {
+    //       if (isMenuOpen) {
+    //         disableBodyScroll(document.body);
+    //       } else {
+    //         enableBodyScroll(document.body);
+    //       }
       
-          return () => {
-            enableBodyScroll(document.body);
-          };
-        }, [isMenuOpen]);
+    //       return () => {
+    //         enableBodyScroll(document.body);
+    //       };
+    //     }, [isMenuOpen]);
       
         const toggleNavBar = () => {
           setIsMenuOpen(!isMenuOpen);
