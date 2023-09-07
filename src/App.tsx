@@ -31,13 +31,15 @@ export const App = () => {
   }, []);
 
   return (
-    <div className="safe-area-container" style = {{  position: "relative", overflow: "hidden",}}>
-      <WelcomePage/>
-      <Hunks10k/>
-      <PFPHunks/>
-      <Creators/>
-      <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />
-      {isMobile ? null : (<Background fullHeight={distanceFromBottom}/>)}
+    <div className="safe-area-container" >
+      <div style = {{  position: "relative", overflow: "hidden",}}>
+        <WelcomePage/>
+        <Hunks10k/>
+        <PFPHunks/>
+        <Creators/>
+        <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />
+        {isMobile ? null : (<Background fullHeight={distanceFromBottom}/>)}
+      </div>
     </div>
   );
 };
