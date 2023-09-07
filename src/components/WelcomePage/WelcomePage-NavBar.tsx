@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import {useRef} from 'react';
 import {FaBars, FaTimes, FaTwitter, FaInstagram, FaDiscord} from 'react-icons/fa';
 import './WelcomePage-NavBar.css';
@@ -14,36 +13,21 @@ export const NavBar = () => {
 
      //Function that adds blur
 
-    //  useEffect(() => {
-    //       const handleScroll = () => {
-    //         if (window.scrollY > 40) {
-    //           setScrollActive(true);
-    //         } else {
-    //           setScrollActive(false);
-    //         }
-    //       };
+     useEffect(() => {
+          const handleScroll = () => {
+            if (window.scrollY > 40) {
+              setScrollActive(true);
+            } else {
+              setScrollActive(false);
+            }
+          };
       
-    //       window.addEventListener('scroll', handleScroll);
+          window.addEventListener('scroll', handleScroll);
       
-    //       return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //       };
-    //     }, []);
-      
-
-     // Blocks scroll when menu open
-
-    //  useEffect(() => {
-    //       if (isMenuOpen) {
-    //         disableBodyScroll(document.body);
-    //       } else {
-    //         enableBodyScroll(document.body);
-    //       }
-      
-    //       return () => {
-    //         enableBodyScroll(document.body);
-    //       };
-    //     }, [isMenuOpen]);
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
       
         const toggleNavBar = () => {
           setIsMenuOpen(!isMenuOpen);
