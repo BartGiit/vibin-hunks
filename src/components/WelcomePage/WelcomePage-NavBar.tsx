@@ -31,8 +31,15 @@ export const NavBar = () => {
       
         const toggleNavBar = () => {
           setIsMenuOpen(!isMenuOpen);
+
+          if (!isMenuOpen) {
+              document.body.style.overflow = 'hidden';
+          } else {
+              document.body.style.overflow = 'auto';
+          }
+      
           navRef.current !== null && navRef.current.classList.toggle("Responsive");
-        };
+      };
 
     return (
          <div className={"NavBar"}>
