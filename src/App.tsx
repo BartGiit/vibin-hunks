@@ -31,14 +31,7 @@ export const App = () => {
   }, []);
 
   return (
-    <div style = {{  
-      position: "relative", 
-      overflow: "hidden",
-      paddingTop: 'env(safe-area-inset-top)',
-      paddingRight: 'env(safe-area-inset-right)',
-      paddingBottom: 'env(safe-area-inset-bottom)',
-      paddingLeft: 'env(safe-area-inset-left)',
-    }}>
+    <div style = {{ position: "relative", overflow: "hidden"}}>
       <WelcomePage/>
       <Hunks10k/>
       <PFPHunks/>
