@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.30c5ca5f.css",
-    "main.js": "/vibin-hunks/static/js/main.16a919d7.js",
+    "main.js": "/vibin-hunks/static/js/main.1fe7434a.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/amor.mp4": "/vibin-hunks/static/media/amor.ab2ef8fe8dc5f9a702f6.mp4",
     "static/media/Vibin-Hunks-slide2.mp4": "/vibin-hunks/static/media/Vibin-Hunks-slide2.3a8d596da120c4151690.mp4",
@@ -39,6 +39,10 @@
     "static/media/1-2-Vibin-Hunks-Profile.jpeg": "/vibin-hunks/static/media/1-2-Vibin-Hunks-Profile.8a8b843a9b04315cf321.jpeg",
     "static/media/2-1-Vibin-Hunks-Profile.jpeg": "/vibin-hunks/static/media/2-1-Vibin-Hunks-Profile.17d932aa253f1ada08c5.jpeg",
     "static/media/shaker.png": "/vibin-hunks/static/media/shaker.5e54cbe89017988e2a61.png",
+    "static/media/Bartolini.jpeg": "/vibin-hunks/static/media/Bartolini.91156374aef616e488b7.jpeg",
+    "static/media/Kamillo.jpeg": "/vibin-hunks/static/media/Kamillo.91156374aef616e488b7.jpeg",
+    "static/media/Michael.jpeg": "/vibin-hunks/static/media/Michael.91156374aef616e488b7.jpeg",
+    "static/media/Nicco.jpeg": "/vibin-hunks/static/media/Nicco.ba9608b025bada6d4463.jpeg",
     "static/media/logo.svg": "/vibin-hunks/static/media/logo.427162df72042c1404694a4db003782a.svg",
     "static/media/logoNoShadow.svg": "/vibin-hunks/static/media/logoNoShadow.c115e9c947d18131210239fdabee9dbe.svg",
     "static/media/ellipseFour.svg": "/vibin-hunks/static/media/ellipseFour.886185db0059a6abcaa1b832686502d0.svg",
@@ -47,11 +51,11 @@
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
     "index.html": "/vibin-hunks/index.html",
     "main.30c5ca5f.css.map": "/vibin-hunks/static/css/main.30c5ca5f.css.map",
-    "main.16a919d7.js.map": "/vibin-hunks/static/js/main.16a919d7.js.map",
+    "main.1fe7434a.js.map": "/vibin-hunks/static/js/main.1fe7434a.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30c5ca5f.css",
-    "static/js/main.16a919d7.js"
+    "static/js/main.1fe7434a.js"
   ]
 }
