@@ -21,13 +21,10 @@ export const Gallery = () => {
     let newValue:number;
     if(e === "First"){ 
       newValue = image.First + 1;
-      console.log(newValue)
     }else if (e === "Second"){
       newValue = image.Second + 1;
-      console.log(newValue)
     }else{
       newValue = image.Third + 1;
-      console.log(newValue)
     }
     if(newValue === 4){
       newValue = 1;

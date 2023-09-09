@@ -254,23 +254,23 @@
 
 @media (max-width:500px){
     .PFPHunks div.Third{
-        width:185px;
-        height:185px;
-        left:55px;
+        width:200px;
+        height:200px;
+        left:45px;
         top:155px;
     }
 
     .PFPHunks div.Second{
-        width:185px;
-        height:185px;
+        width:200px;
+        height:200px;
         left:105px;
     }
 
     .PFPHunks div.First{
-        width:185px;
-        height:185px;
-        left:160px;
-        top:250px;
+        width:200px;
+        height:200px;
+        left:180px;
+        top:260px;
     }
 }
 
@@ -280,47 +280,49 @@
     }
 
     .PFPHunks div.Second{
-        left:85px;
+        left:105px;
     }
 
-    .PFPHunks div.Second{
-        left:120px;
+    .PFPHunks div.First{
+        left:160px;
     }
 }
 
 @media (max-width:400px){
     .PFPHunks div.Third{
-        width:165px;
-        height:165px;
+        width:185px;
+        height:185px;
     }
 
     .PFPHunks div.Second{
-        width:165px;
-        height:165px;
+        width:185px;
+        height:185px;
     }
 
     .PFPHunks div.First{
-        width:165px;
-        height:165px;
+        width:185px;
+        height:185px;
+        left:136px;
     }
 }
 
 @media (max-width:355px){
     .PFPHunks div.Third{
-        width:155px;
-        height:155px;
-        left:0;
+        width:170px;
+        height:170px;
+        left:8px;
     }
 
     .PFPHunks div.Second{
-        width:155px;
-        height:155px;
-        left:50px;
+        width:170px;
+        height:170px;
+        left:70px;
     }
 
     .PFPHunks div.First{
-        width:155px;
-        height:155px;
+        width:170px;
+        height:170px;
+        left:115px;
     }
 }
 
