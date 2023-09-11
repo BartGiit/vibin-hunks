@@ -235,7 +235,7 @@
 @media (max-width: 550px){
     .SocialMedia{
         background-color: #96a5fe;
-        height:750px;
+        height:850px;
     }
     
     .textSVG{
@@ -264,7 +264,7 @@
     }
 
     .SocialMedia .Image{
-        height:550px;
+        height:600px;
     }
 
     .SocialMedia .Image p{
@@ -275,7 +275,6 @@
 
     .SocialMedia .Image div{
         position:static;
-        width:100%;
         margin-left:42px;
     }
 
