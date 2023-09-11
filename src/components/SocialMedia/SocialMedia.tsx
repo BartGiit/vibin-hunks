@@ -6,6 +6,7 @@ import desktopDoItImage from '../../../src/images/text/desktopDoIt.svg';
 import mobileDoItImage from '../../../src/images/text/mobileDoIt.svg';
 import desktopYouKnowImage from '../../../src/images/text/desktopYouKnow.svg';
 import logo from '../../../src/images/logoNoShadow.svg';
+import AngelCanvas from '../Utils/CanvasAngel';
 
 export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
   
@@ -48,10 +49,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
       <div className="Image">
         <p>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
-        <video autoPlay loop muted playsInline>
-          <source src={require("../../../src/images/amor.mp4")} type={'video/mp4; codecs=hvc1'} />
-          <source src={require("../../../src/images/amor.webm")} type={'video/webm'} />
-        </video>
+        <AngelCanvas/>
       </div>
     </div>
   );
