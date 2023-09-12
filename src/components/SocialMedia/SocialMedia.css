@@ -90,6 +90,11 @@
     position:relative;
 }
 
+.SocialMedia .Image .Angel div{
+    width:100%;
+    height:100%;
+}
+
 .SocialMedia .Image img.textSVGthird{
     position:absolute;
     left:8%;
@@ -105,7 +110,7 @@
     display:none;
 }
 
-.SocialMedia .Image div{
+.SocialMedia .Image .Angel{
     position:absolute;
     left:0;
     right:0;
@@ -206,9 +211,10 @@
         align-items:center;
         width:600px;
     }
-    .SocialMedia .Image div{
+    .SocialMedia .Image .Angel{
         position:static;
         width:100%;
+        height:100%;
         margin-left:42px;
     }
     .SocialMedia .TextWrapper{
@@ -235,7 +241,8 @@
 @media (max-width: 550px){
     .SocialMedia{
         background-color: #96a5fe;
-        height:850px;
+        height:900px;
+        justify-content: space-between;
     }
     
     .textSVG{
@@ -264,18 +271,17 @@
     }
 
     .SocialMedia .Image{
-        height:600px;
+        height:90%
     }
 
     .SocialMedia .Image p{
-        width:320px;
-        font-size:40px;
-        line-height:48px;
+        width:240px;
+        font-size:32px;
+        line-height:36px;
     }
 
-    .SocialMedia .Image div{
-        position:static;
-        margin-left:42px;
+    .SocialMedia .Image .Angel{
+        height:130%;
     }
 
     .SocialMedia .TextWrapper{

@@ -49,7 +49,9 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
       <div className="Image">
         <p>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
-        <AngelCanvas/>
+        <div className='Angel'>
+        <AngelCanvas/> 
+        </div>
       </div>
     </div>
   );
