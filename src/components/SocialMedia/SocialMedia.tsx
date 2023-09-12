@@ -9,7 +9,7 @@ import logo from '../../../src/images/logoNoShadow.svg';
 import AngelCanvas from '../Utils/CanvasAngel';
 
 export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight;
