@@ -241,7 +241,7 @@
 @media (max-width: 550px){
     .SocialMedia{
         background-color: #96a5fe;
-        height:900px;
+        height:1000px;
         justify-content: space-between;
     }
     
@@ -275,9 +275,9 @@
     }
 
     .SocialMedia .Image p{
-        width:240px;
-        font-size:32px;
-        line-height:36px;
+        width:260px;
+        font-size:36px;
+        line-height:42px;
     }
 
     .SocialMedia .Image .Angel{
@@ -285,7 +285,7 @@
     }
 
     .SocialMedia .TextWrapper{
-        height:200px;
+        height:190px;
         width:600px;
     }
 
