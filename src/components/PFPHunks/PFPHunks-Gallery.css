@@ -243,6 +243,7 @@
 @media (max-width:570px){
     .PFPHunks .Gallery{
         width:85%;
+        margin-top:16px;
     }
 }
 

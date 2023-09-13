@@ -278,9 +278,11 @@
         width:260px;
         font-size:36px;
         line-height:42px;
+        margin-top:50px;
     }
 
     .SocialMedia .Image .Angel{
+        margin-top: -30px;
         height:130%;
     }
 

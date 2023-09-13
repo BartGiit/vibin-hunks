@@ -80,8 +80,16 @@
         align-content:center;
     }
 
+    .Creators .Cards p {
+        text-align: left;
+    }
+
     .Creators .Cards :nth-child(even){
         flex-direction:row-reverse;
+    }
+
+    .Creators .Cards > :nth-child(even) p {
+        text-align: right;
     }
 }
 
