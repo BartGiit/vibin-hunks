@@ -9,37 +9,36 @@ import VideoCanvas from '../Utils/Canvas';
 
 
 type SliderProps = {
-  setSwiperBackgroundColor: Dispatch<SetStateAction<string>>;
   VideoSize: {
     dynamicWidth: string;
   };
   setVideoSize: Dispatch<SetStateAction<{ dynamicWidth: string }>>;
 };
 
-export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoSize, setVideoSize }) => {
+export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
 
 
-  const handleVideoLoad = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
-    const video = e.currentTarget; // Access currentTarget for strong typing
+//   const handleVideoLoad = (e: React.SyntheticEvent<HTMLVideoElement, Event>) => {
+//     const video = e.currentTarget; // Access currentTarget for strong typing
 
-    // Create a temporary canvas
-    const canvas = document.createElement('canvas');
-    canvas.width = video.videoWidth;
-    canvas.height = video.videoHeight;
+//     // Create a temporary canvas
+//     const canvas = document.createElement('canvas');
+//     canvas.width = video.videoWidth;
+//     canvas.height = video.videoHeight;
 
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return; // Exit if context is not available
+//     const ctx = canvas.getContext('2d');
+//     if (!ctx) return; // Exit if context is not available
 
-    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+//     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-    // Get color data of the first pixel
-    const firstPixelData = ctx.getImageData(0, 0, 1, 1).data;
+//     // Get color data of the first pixel
+//     const firstPixelData = ctx.getImageData(0, 0, 1, 1).data;
 
-    const bgColor = `rgb(${firstPixelData[0]}, ${firstPixelData[1]}, ${firstPixelData[2]})`;
+//     const bgColor = `rgb(${firstPixelData[0]}, ${firstPixelData[1]}, ${firstPixelData[2]})`;
 
-    // Set the background
-    setSwiperBackgroundColor(bgColor);
-}
+//     // Set the background
+//     setSwiperBackgroundColor(bgColor);
+// }
 
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
@@ -142,7 +141,7 @@ export const Slider: React.FC<SliderProps> = ({ setSwiperBackgroundColor, VideoS
       > 
         <SwiperSlide className={"SwiperSlide"} key={1}>
             {VideoSize.dynamicWidth === "small" ?
-                <video onCanPlay={handleVideoLoad} autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?

@@ -6,10 +6,28 @@
     position:relative;
     overflow:hidden;
 }
+.WelcomePage .BlueBackground{
+    display:none;
+}
 
 @media (max-width:550px){
     .WelcomePage{
         background-color: #96a5fe;
         height:95vh;
+    }
+
+    .WelcomePage .BlueBackground{
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+    }
+
+    .WelcomePage .BlueBackground video{
+        height:100%;
+        width:100%;
+        object-fit: cover;
     }
 }

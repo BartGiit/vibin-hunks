@@ -5,7 +5,7 @@ import {Trailer} from './WelcomePage-Trailer';
 import './WelcomePage.css';
 
 export const WelcomePage = () => {
-  const [swiperBackgroundColor, setSwiperBackgroundColor] = useState("rgb(148, 169, 255)");
+
   const [VideoSize, setVideoSize] = useState(
     window.innerWidth > 1220 ?
       { dynamicWidth: "big" } :
@@ -15,10 +15,12 @@ export const WelcomePage = () => {
   );
 
   return (
-    <div className={"WelcomePage"} style={VideoSize.dynamicWidth === "small" ? { backgroundColor: swiperBackgroundColor } : {}}>
+    <div className={"WelcomePage"}>
+      <div className={"BlueBackground"}>
+      <video autoPlay loop muted playsInline><source src={require("../../../src/images/background/blue_background.mp4")} type='video/mp4'/></video>
+      </div>
       <NavBar />
       <Slider
-        setSwiperBackgroundColor={setSwiperBackgroundColor}
         VideoSize={VideoSize}
         setVideoSize={setVideoSize}
       />
