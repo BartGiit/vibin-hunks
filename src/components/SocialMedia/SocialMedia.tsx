@@ -28,6 +28,9 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
 
   return (
     <div className={"SocialMedia"}>
+      <div className={"BlueBackground"}>
+      <video autoPlay loop muted playsInline><source src={require("../../../src/images/background/blue_background.mp4")} type='video/mp4'/></video>
+      </div>
       <div className="TextWrapper">
         <div className="Text">
           <div className="Love">
@@ -50,7 +53,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
         <p>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
         <div className='Angel'>
-        {Mobile ? <video autoPlay loop muted playsInline><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <AngelCanvas/> }
+        {Mobile ? <video autoPlay loop muted playsInline><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <AngelCanvas children={undefined}/> }
         </div>
       </div>
     </div>

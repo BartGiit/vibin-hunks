@@ -9,6 +9,10 @@
     position:relative;
 }
 
+.SocialMedia .BlueBackground{
+    display:none;
+}
+
 .SocialMedia .TextWrapper{
     width:900px;
     height:100%;
@@ -240,12 +244,26 @@
 
 @media (max-width: 550px){
     .SocialMedia{
-        background-color: #96a5fe;
         height:800px;
         justify-content: space-between;
     }
+
+    .SocialMedia .BlueBackground{
+        display:block;
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        right:0;
+    }
+
+    .SocialMedia .BlueBackground video{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
     
-    .textSVG{
+    .SocialMedia .textSVG{
         display:none;
     }
     
