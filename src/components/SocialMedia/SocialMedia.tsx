@@ -7,6 +7,7 @@ import mobileDoItImage from '../../../src/images/text/mobileDoIt.svg';
 import desktopYouKnowImage from '../../../src/images/text/desktopYouKnow.svg';
 import logo from '../../../src/images/logoNoShadow.svg';
 import AngelCanvas from '../Utils/CanvasAngel';
+import BlueBackground from "../../../src/images/background/blue_background.mp4";
 
 export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
 
@@ -29,7 +30,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
   return (
     <div className={"SocialMedia"}>
       <div className={"BlueBackground"}>
-      <video autoPlay loop muted playsInline><source src={require("../../../src/images/background/blue_background.mp4")} type='video/mp4'/></video>
+      <video autoPlay loop muted playsInline><source src={BlueBackground} type='video/mp4'/></video>
       </div>
       <div className="TextWrapper">
         <div className="Text">

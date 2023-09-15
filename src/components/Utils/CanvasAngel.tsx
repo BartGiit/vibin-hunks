@@ -8,21 +8,6 @@ const AngelCanvas: React.FC<CanvasProps> = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const animationId = useRef<number | null>(null);
 
-  // Initialize state for the FOV
-  const [fov, setFov] = useState(window.innerWidth <= 550 ? 82 : 100);
-
-  useEffect(() => {
-    // Update the FOV based on window width
-    const updateFov = () => {
-      setFov(window.innerWidth <= 550 ? 82 : 100);
-    };
-
-    window.addEventListener('resize', updateFov);
-
-    return () => {
-      window.removeEventListener('resize', updateFov);
-    };
-  }, []);
 
   useEffect(() => {
     if (!mount.current || !videoRef.current) return;
@@ -32,7 +17,7 @@ const AngelCanvas: React.FC<CanvasProps> = () => {
     const computedWidth = height * desiredAspectRatio;
 
     const scene = new THREE.Scene();
-    let camera = new THREE.PerspectiveCamera(fov, desiredAspectRatio, 0.5, 1000); // Use the fov state here
+    let camera = new THREE.PerspectiveCamera(100, desiredAspectRatio, 0.5, 1000); // Use the fov state here
     const renderer = new THREE.WebGLRenderer({ alpha: true });
 
     renderer.setSize(computedWidth, height);
@@ -141,7 +126,7 @@ const AngelCanvas: React.FC<CanvasProps> = () => {
 
       window.removeEventListener('resize', handleResize);
     };
-  }, [fov]);
+  }, []);
 
   return (
     <div ref={mount} style={{ transform: 'rotate(180deg) scaleX(-1)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: "visible", height: "100%" }}>

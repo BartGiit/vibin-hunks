@@ -30,4 +30,13 @@
         width:100%;
         object-fit: cover;
     }
+
+    .WelcomePage .Trailer{
+        z-index:2;
+        position:relative;
+    }
+
+    .WelcomePage .Trailer button{
+        z-index:2
+    }
 }
