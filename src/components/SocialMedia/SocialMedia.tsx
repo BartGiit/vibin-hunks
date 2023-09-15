@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaDiscord, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './SocialMedia.css';
 import desktopPleaseImage from '../../../src/images/text/desktopPlease.svg';
@@ -10,16 +10,20 @@ import AngelCanvas from '../Utils/CanvasAngel';
 import BlueBackground from "../../../src/images/background/blue_background.mp4";
 
 export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
+  
+  const [renderKey, setRenderKey] = useState(Date.now());
 
   useEffect(() => {
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight;
-
       onHeightChange(totalHeight);
     };
 
     window.addEventListener('load', handleScroll);
     window.addEventListener('scroll', handleScroll);
+
+    // Force re-render on page load
+    setRenderKey(Date.now());
 
     return () => {
       window.removeEventListener('load', handleScroll);
@@ -29,8 +33,10 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
 
   return (
     <div className={"SocialMedia"}>
-      <div className={"BlueBackground"}>
-      <video autoPlay loop muted playsInline><source src={BlueBackground} type='video/mp4'/></video>
+      <div className={"BlueBackground"} key={renderKey}>
+        <video autoPlay loop muted playsInline>
+          <source src={BlueBackground} type='video/mp4' />
+        </video>
       </div>
       <div className="TextWrapper">
         <div className="Text">
