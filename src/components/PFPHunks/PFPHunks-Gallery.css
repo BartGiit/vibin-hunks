@@ -20,6 +20,21 @@
     overflow:hidden;
 }
 
+.PFPHunks .Gallery .InstructionTap{
+    position:absolute;
+    width:220px;
+    height:220px;
+    left:80%;
+    top:60%;
+    z-index:4;
+    pointer-events: none;
+}
+
+.PFPHunks .Gallery .InstructionTap video{
+    width:100%;
+    height:100%
+}
+
 .PFPHunks div img{
     position:absolute;
     left:0;
@@ -141,6 +156,11 @@
         left:350px;
         top:335px;
     }
+
+    .PFPHunks .Gallery .InstructionTap{
+        width:200px;
+        height:200px;
+    }
 }
 
 @media (max-width:1220px){
@@ -163,6 +183,13 @@
         height:290px;
         left:320px;
         top:335px;
+    }
+
+    .PFPHunks .Gallery .InstructionTap{
+        width:180px;
+        height:180px;
+        left:78%;
+        top:55%;
     }
 }
 
@@ -213,6 +240,13 @@
         height:250px;
         left:235px;
         top:115px;
+    }
+
+    .PFPHunks .Gallery .InstructionTap{
+        width:180px;
+        height:180px;
+        left:72%;
+        top:60%;
     }
 }
 
@@ -272,6 +306,13 @@
         height:200px;
         left:180px;
         top:260px;
+    }
+
+    .PFPHunks .Gallery .InstructionTap{
+        width:150px;
+        height:150px;
+        left:32%;
+        top:50%;
     }
 }
 

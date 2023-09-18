@@ -14,6 +14,9 @@ import Image33 from '../../../src/images/PFPHunks/3-3-Vibin-Hunks-Profile.jpeg';
 
 export const Gallery = () => {
 
+    // useState to control the visibility of InstructionSwipe
+    const [showInstruction, setShowInstruction] = useState(true);  
+
   const [index, setIndex] = useState(["2","1","3"]);
   const [image, setImage] = useState({First:1, Second:1, Third:1});
 
@@ -68,7 +71,7 @@ export const Gallery = () => {
   }
 
     return (
-      <div className={"Gallery"}>
+      <div className={"Gallery"} onMouseDown={() => setShowInstruction(false)}>
         <div className="First" style={{zIndex:index[0]}} onClick={handleClick}>
           <img src={Image11} alt="Hunk PFP" style={{display: image.First === 1 ? "block" : "none"}} />
           <img src={Image12} alt="Hunk PFP" style={{display: image.First === 2 ? "block" : "none"}} />
@@ -82,8 +85,14 @@ export const Gallery = () => {
         <div className="Third" style={{zIndex:index[2]}} onClick={handleClick}>
           <img src={Image31} alt="Hunk PFP" style={{display: image.Third === 1 ? "block" : "none"}} />
           <img src={Image32} alt="Hunk PFP" style={{display: image.Third === 2 ? "block" : "none"}} />
-          <img src={Image33} alt="Hunk PFP" style={{display: image.Third === 3 ? "block" : "none"}} />
+          <img src={Image33} alt="Hunk PFP" style={{display: image.Third === 3 ? "block" : "none"}} />       
         </div>
+        {showInstruction && (<div className={"InstructionTap"}>
+          <video autoPlay loop muted playsInline>
+              <source src={require("../../../src/images/instructions/tap.mp4")} type='video/mp4; codecs="hev1"'/>
+              <source src={require("../../../src/images/instructions/tap.webm")} type='video/webm'/>
+          </video> 
+        </div>)}  
       </div>
     );
   }
