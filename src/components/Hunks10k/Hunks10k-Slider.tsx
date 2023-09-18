@@ -17,7 +17,7 @@ export const Slider = () => {
                 {showInstruction && (
                     <div className={"InstructionSwipe"}>
                         <video autoPlay loop muted playsInline>
-                            <source src={require("../../../src/images/instructions/swipe.mp4")} type='video/mp4; codecs="hev1"'/>
+                            <source src={require("../../../src/images/instructions/swipe.mp4")} type='video/mp4; codecs="hvc1"'/>
                             <source src={require("../../../src/images/instructions/swipe.webm")} type='video/webm'/>
                         </video> 
                     </div>

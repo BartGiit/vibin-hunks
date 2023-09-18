@@ -89,7 +89,7 @@ export const Gallery = () => {
         </div>
         {showInstruction && (<div className={"InstructionTap"}>
           <video autoPlay loop muted playsInline>
-              <source src={require("../../../src/images/instructions/tap.mp4")} type='video/mp4; codecs="hev1"'/>
+              <source src={require("../../../src/images/instructions/tap.mp4")} type='video/mp4; codecs="hvc1"'/>
               <source src={require("../../../src/images/instructions/tap.webm")} type='video/webm'/>
           </video> 
         </div>)}  
