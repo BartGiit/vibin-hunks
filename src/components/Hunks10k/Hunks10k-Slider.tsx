@@ -38,14 +38,21 @@ export const Slider = () => {
                         disableOnInteraction: false,
                     }}
                     onTouchStart={(swiper) => {
-                        setTouchStartedIndex(swiper.activeIndex);
+                        if (showInstruction){
+                            setTouchStartedIndex(swiper.activeIndex);
+                        }
                     }}
                     onTouchEnd={(swiper) => {
-                        if (touchStartedIndex !== null && touchStartedIndex !== swiper.activeIndex) {
-                            setShowInstruction(false);
+                        if (showInstruction){
+                            setTimeout(() => {
+                                if (touchStartedIndex !== null && touchStartedIndex !== swiper.activeIndex) {
+                                    setShowInstruction(false);
+                                }
+                                setTouchStartedIndex(null);
+                            }, 1000);
                         }
-                        setTouchStartedIndex(null);
                     }}
+                    
                     className="mySwiper"
                 >
                     {Slides.map(slide => 
