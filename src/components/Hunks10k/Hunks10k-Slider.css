@@ -95,8 +95,8 @@
 @media(max-width:550px){
     .Hunks10k .InstructionSwipe{
         top:45%;
-        width:280px;
-        height:123px;
+        width:300px;
+        height:132px;
     }
 }
 
@@ -120,5 +120,13 @@
 @media(max-width:370px){
     .Hunks10k .swiper{
         height:490px;
+    }
+}
+
+@media(max-width:300px){
+    .Hunks10k .InstructionSwipe{
+        top:45%;
+        width:300px;
+        height:123px;
     }
 }

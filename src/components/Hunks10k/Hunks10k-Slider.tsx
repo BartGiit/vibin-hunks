@@ -49,7 +49,7 @@ export const Slider = () => {
                                     setShowInstruction(false);
                                 }
                                 setTouchStartedIndex(null);
-                            }, 1000);
+                            }, 600);
                         }
                     }}
                     
