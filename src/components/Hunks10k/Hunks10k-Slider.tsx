@@ -11,9 +11,9 @@ export const Slider = () => {
     // useState to control the visibility of InstructionSwipe
     const [showInstruction, setShowInstruction] = useState(true);
     
-    // Track touch events
-    const [touchStarted, setTouchStarted] = useState(false);
-    const [userSwiped, setUserSwiped] = useState(false);
+    // Track touch events and active index
+    const [touchStartedIndex, setTouchStartedIndex] = useState<number | null>(null);
+
 
     return (
         <>
@@ -37,15 +37,14 @@ export const Slider = () => {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                    onTouchStart={() => {
-                        setTouchStarted(true);
-                        setUserSwiped(false);
+                    onTouchStart={(swiper) => {
+                        setTouchStartedIndex(swiper.activeIndex);
                     }}
-                    onTouchEnd={() => {
-                        if (touchStarted) {
-                            setUserSwiped(true);
+                    onTouchEnd={(swiper) => {
+                        if (touchStartedIndex !== null && touchStartedIndex !== swiper.activeIndex) {
+                            setShowInstruction(false);
                         }
-                        setShowInstruction(false);
+                        setTouchStartedIndex(null);
                     }}
                     className="mySwiper"
                 >
@@ -61,4 +60,5 @@ export const Slider = () => {
         </>
     );
 }
+
 
