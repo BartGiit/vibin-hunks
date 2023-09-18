@@ -13,7 +13,7 @@ export const Slider = () => {
 
     return (
         <>
-            <div className={"Slider"} onMouseDown={() => setShowInstruction(false)} >
+            <div className={"Slider"} onMouseDown={() => setShowInstruction(false)} onTouchStart={() => setShowInstruction(false)} >
                 {showInstruction && (
                     <div className={"InstructionSwipe"}>
                         <video autoPlay loop muted playsInline>

@@ -14,7 +14,7 @@
     top: 45%;
     left: 50%;
     width: 400px;
-    height: 140px;
+    height: 175px;
     transform: translateX(-58%);
     z-index: 3;
     pointer-events: none;
@@ -87,7 +87,7 @@
     .Hunks10k .InstructionSwipe{
         top:40%;
         width:300px;
-        height:100px;
+        height:132px;
         transform: translateX(-50%);
     }
 }
@@ -96,7 +96,7 @@
     .Hunks10k .InstructionSwipe{
         top:45%;
         width:280px;
-        height:100px;
+        height:123px;
     }
 }
 
