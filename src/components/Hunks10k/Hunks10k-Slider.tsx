@@ -45,12 +45,7 @@ export const Slider = () => {
                         if (touchStarted) {
                             setUserSwiped(true);
                         }
-                        setTouchStarted(false);
-                    }}
-                    onSlideChange={() => {
-                        if (userSwiped) {
-                            setShowInstruction(false);
-                        }
+                        setShowInstruction(false);
                     }}
                     className="mySwiper"
                 >
