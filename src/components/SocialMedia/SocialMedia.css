@@ -246,21 +246,7 @@
     .SocialMedia{
         height:800px;
         justify-content: space-between;
-    }
-
-    .SocialMedia .BlueBackground{
-        display:block;
-        position:absolute;
-        left:0;
-        top:0;
-        bottom:0;
-        right:0;
-    }
-
-    .SocialMedia .BlueBackground video{
-        height:100%;
-        width:100%;
-        object-fit: cover;
+        background-color: rgb(148, 169, 255);
     }
     
     .SocialMedia .textSVG{
@@ -338,6 +324,26 @@
         left:24%;
         top:35%;
         width:90px;
+    }
+}
+
+@supports (-webkit-touch-callout:none){
+
+    @media (max-width: 550px){
+        .SocialMedia .BlueBackground{
+            display:block;
+            position:absolute;
+            left:0;
+            top:0;
+            bottom:0;
+            right:0;
+        }
+    
+        .SocialMedia .BlueBackground video{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
     }
 }
 
