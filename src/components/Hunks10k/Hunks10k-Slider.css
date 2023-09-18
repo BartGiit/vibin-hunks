@@ -13,9 +13,9 @@
     position: absolute;
     top: 45%;
     left: 50%;
-    width: 400px;
-    height: 175px;
-    transform: translateX(-58%);
+    width: 600px;
+    height: 263px;
+    transform: translateX(-54%);
     z-index: 3;
     pointer-events: none;
 }
@@ -51,12 +51,23 @@
         width:500px;
         height:500px;
     }
+
+    .Hunks10k .InstructionSwipe {
+        width: 500px;
+        height: 219px;
+    }
 }
 
 @media(max-width:1360px){
     .Hunks10k .swiper{
         width:420px;
         height:420px;
+    }
+
+    .Hunks10k .InstructionSwipe {
+        width: 420px;
+        height: 184px;
+        transform: translateX(-50%);
     }
 }
 
@@ -71,6 +82,10 @@
         width:500px;
         height:500px;
     }
+    .Hunks10k .InstructionSwipe {
+        width: 500px;
+        height: 219px;
+    }
 }
 
 @media(max-width:1000px){
@@ -84,19 +99,16 @@
         height:380px;
     }
 
+    .Hunks10k .InstructionSwipe {
+        width: 380px;
+        height: 167px;
+    }
+
     .Hunks10k .InstructionSwipe{
         top:40%;
         width:300px;
         height:132px;
         transform: translateX(-50%);
-    }
-}
-
-@media(max-width:550px){
-    .Hunks10k .InstructionSwipe{
-        top:45%;
-        width:300px;
-        height:132px;
     }
 }
 
@@ -111,6 +123,11 @@
         height:520px;
     }
 
+    .Hunks10k .InstructionSwipe {
+        width: 100vw;
+        overflow:visible;
+    }
+
     .Hunks10k .swiper-slide{
         background-size:cover !important;
         background-position:center;
@@ -120,13 +137,5 @@
 @media(max-width:370px){
     .Hunks10k .swiper{
         height:490px;
-    }
-}
-
-@media(max-width:300px){
-    .Hunks10k .InstructionSwipe{
-        top:45%;
-        width:300px;
-        height:123px;
     }
 }
