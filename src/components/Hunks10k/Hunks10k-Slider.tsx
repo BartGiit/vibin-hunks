@@ -10,10 +10,14 @@ export const Slider = () => {
 
     // useState to control the visibility of InstructionSwipe
     const [showInstruction, setShowInstruction] = useState(true);
+    
+    // Track touch events
+    const [touchStarted, setTouchStarted] = useState(false);
+    const [userSwiped, setUserSwiped] = useState(false);
 
     return (
         <>
-            <div className={"Slider"} onMouseDown={() => setShowInstruction(false)}>
+            <div className={"Slider"}>
                 {showInstruction && (
                     <div className={"InstructionSwipe"}>
                         <video autoPlay loop muted playsInline>
@@ -33,7 +37,21 @@ export const Slider = () => {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                    onSlideChange={() => setShowInstruction(false)}
+                    onTouchStart={() => {
+                        setTouchStarted(true);
+                        setUserSwiped(false);
+                    }}
+                    onTouchEnd={() => {
+                        if (touchStarted) {
+                            setUserSwiped(true);
+                        }
+                        setTouchStarted(false);
+                    }}
+                    onSlideChange={() => {
+                        if (userSwiped) {
+                            setShowInstruction(false);
+                        }
+                    }}
                     className="mySwiper"
                 >
                     {Slides.map(slide => 
