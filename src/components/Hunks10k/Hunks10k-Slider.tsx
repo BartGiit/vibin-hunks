@@ -13,7 +13,7 @@ export const Slider = () => {
 
     return (
         <>
-            <div className={"Slider"} onMouseDown={() => setShowInstruction(false)} onTouchMove={() => setShowInstruction(false)} >
+            <div className={"Slider"} onMouseDown={() => setShowInstruction(false)}>
                 {showInstruction && (
                     <div className={"InstructionSwipe"}>
                         <video autoPlay loop muted playsInline>
@@ -33,6 +33,7 @@ export const Slider = () => {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
+                    onSlideChange={() => setShowInstruction(false)}
                     className="mySwiper"
                 >
                     {Slides.map(slide => 
@@ -47,3 +48,4 @@ export const Slider = () => {
         </>
     );
 }
+
