@@ -105,7 +105,7 @@
     }
 
     .Hunks10k .InstructionSwipe{
-        top:40%;
+        top:48%;
         width:300px;
         height:132px;
         transform: translateX(-50%);
@@ -125,7 +125,7 @@
 
     .Hunks10k .InstructionSwipe {
         width: 100vw;
-        overflow:visible;
+        height: calc((100vw * 3.5)/8)
     }
 
     .Hunks10k .swiper-slide{
