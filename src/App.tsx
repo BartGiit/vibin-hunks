@@ -7,6 +7,18 @@ import { WelcomePage } from './components/WelcomePage/WelcomePage';
 import { Background } from './components/Utils/Background';
 
 export const App = () => {
+  const [isWelcomePageLoaded, setIsWelcomePageLoaded] = useState(false);
+  
+  useEffect(() => {
+    if (isWelcomePageLoaded) {
+         const button = document.getElementById('LoaderButton');
+     if (button){
+      setTimeout(() => {
+      button.style.display = 'block';
+     }, 1000)
+    }}
+  }, [isWelcomePageLoaded]);
+
   const [distanceFromBottom, setDistanceFromBottom] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -32,7 +44,7 @@ export const App = () => {
 
   return (
     <div style = {{ position: "relative", overflow: "hidden"}}>
-      <WelcomePage/>
+      <WelcomePage onLoaded={() => setIsWelcomePageLoaded(true)} />
       <Hunks10k/>
       <PFPHunks/>
       <Creators/>
