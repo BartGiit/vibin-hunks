@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.31d37d27.css",
-    "main.js": "/vibin-hunks/static/js/main.07dcd0af.js",
+    "main.js": "/vibin-hunks/static/js/main.5d944bb3.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/amor.mp4": "/vibin-hunks/static/media/amor.ab2ef8fe8dc5f9a702f6.mp4",
     "static/media/Vibin-Hunks-slide2.mp4": "/vibin-hunks/static/media/Vibin-Hunks-slide2.3a8d596da120c4151690.mp4",
@@ -48,17 +48,18 @@
     "static/media/logo.svg": "/vibin-hunks/static/media/logo.427162df72042c1404694a4db003782a.svg",
     "static/media/logoNoShadow.svg": "/vibin-hunks/static/media/logoNoShadow.c115e9c947d18131210239fdabee9dbe.svg",
     "static/media/blue_background.mp4": "/vibin-hunks/static/media/blue_background.650fc5cb1e0b8d112692.mp4",
+    "index.html": "/vibin-hunks/index.html",
+    "static/media/blueBackground.mp4": "/vibin-hunks/static/media/blueBackground.412d6612e2da9cd94cda.mp4",
     "static/media/ellipseFour.svg": "/vibin-hunks/static/media/ellipseFour.886185db0059a6abcaa1b832686502d0.svg",
     "static/media/ellipseTwo.svg": "/vibin-hunks/static/media/ellipseTwo.f66732d4611decb389eb4630becd7d94.svg",
     "static/media/ellipseThree.svg": "/vibin-hunks/static/media/ellipseThree.5249cf35983c713b4e1b1cab3f78492c.svg",
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
-    "index.html": "/vibin-hunks/index.html",
     "main.31d37d27.css.map": "/vibin-hunks/static/css/main.31d37d27.css.map",
-    "main.07dcd0af.js.map": "/vibin-hunks/static/js/main.07dcd0af.js.map",
+    "main.5d944bb3.js.map": "/vibin-hunks/static/js/main.5d944bb3.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d37d27.css",
-    "static/js/main.07dcd0af.js"
+    "static/js/main.5d944bb3.js"
   ]
 }
