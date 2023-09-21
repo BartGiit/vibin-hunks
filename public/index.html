@@ -79,37 +79,54 @@
             -webkit-tap-highlight-color: rgba(0,0,0,0);
         }
 
-        #spinner-overlay #Dumbbell {
+
+        .additionalLoading {
             position: absolute;
-            bottom: 6%;
-            right: 9%;
-            width:160px;
-            height:160px;
-            animation-name: floating;
-            animation-duration: 5s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
             user-select: none;
             touch-action: manipulation;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
             pointer-events: none;
+            width:150px;
+            height:150px;
+        }
+
+        #spinner-overlay #Dumbbell {
+            bottom: 11%;
+            right: 8%;
+            animation-name: floating;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
 
         #spinner-overlay #Protein {
-            position: absolute;
-            top: 6%;
-            left: 8%;
-            width:160px;
-            height:160px;
+            top: 9%;
+            left: 11%;
             animation-name: floatingTwo;
             animation-duration: 4s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             animation-delay: .5s;
-            user-select: none;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-            pointer-events: none;
+        }
+        
+        #spinner-overlay #Gallon {
+            top: 5%;
+            right: 10%;
+            animation-name: floating;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+        }
+
+        #spinner-overlay #Shaker {
+            bottom: 9%;
+            left: 9%;
+            animation-name: floatingTwo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: .7s;
         }
 
         @keyframes floating {
@@ -136,13 +153,15 @@
         <div>
           <video loop autoplay muted playsinline preload="metadata">
             <source src="%PUBLIC_URL%/animation.mp4" type="video/mp4" />
-          </video>        
+          </video> 
         </div>
         <div id="ButtonContainer">
             <div id="LoaderButton" onclick="hideOverlayInit()">Explore!</div>
         </div>
-        <img id="Dumbbell" src="%PUBLIC_URL%/dumbbell.png" alt="dumbbell">
-        <img id="Protein" src="%PUBLIC_URL%/protein.png" alt="protein">
+        <img id="Protein" class="additionalLoading" src="%PUBLIC_URL%/protein.png" alt="protein">       
+        <img id="Dumbbell" class="additionalLoading" src="%PUBLIC_URL%/dumbbell.png" alt="dumbbell">
+        <img id="Gallon" class="additionalLoading" src="%PUBLIC_URL%/gallon.png" alt="gallon">       
+        <img id="Shaker" class="additionalLoading" src="%PUBLIC_URL%/shaker.png" alt="shaker">
     </div>
     <div id="root"></div>
 
