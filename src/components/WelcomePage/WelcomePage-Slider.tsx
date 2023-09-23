@@ -118,7 +118,7 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
       >
         <SwiperSlide className={"SwiperSlide"} key={1}>
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -129,7 +129,7 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={2}>
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide2.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -140,7 +140,7 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={3}>
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide3.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -151,7 +151,7 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={4}>
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth}>
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide4.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?

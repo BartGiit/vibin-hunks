@@ -99,36 +99,6 @@
             animation-iteration-count: infinite;
         }
 
-        #spinner-overlay #Protein {
-            top: 9%;
-            left: 11%;
-            animation-name: floatingTwo;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-delay: .5s;
-        }
-        
-        #spinner-overlay #Gallon {
-            top: 5%;
-            right: 10%;
-            animation-name: floating;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-delay: 1s;
-        }
-
-        #spinner-overlay #Shaker {
-            bottom: 11%;
-            left: 9%;
-            animation-name: floatingTwo;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-delay: .7s;
-        }
-
         @keyframes floating {
             0%   {transform: translateY(-15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
             50%  {transform: translateY(15px); animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
@@ -157,11 +127,8 @@
         </div>
         <div id="ButtonContainer">
             <div id="LoaderButton" onclick="hideOverlayInit()">Explore!</div>
-        </div>
-        <img id="Protein" class="additionalLoading" src="%PUBLIC_URL%/protein.png" alt="protein">       
+        </div>     
         <img id="Dumbbell" class="additionalLoading" src="%PUBLIC_URL%/dumbbell.png" alt="dumbbell">
-        <img id="Gallon" class="additionalLoading" src="%PUBLIC_URL%/gallon.png" alt="gallon">       
-        <img id="Shaker" class="additionalLoading" src="%PUBLIC_URL%/shaker.png" alt="shaker">
     </div>
     <div id="root"></div>
 
