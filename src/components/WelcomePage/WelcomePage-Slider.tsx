@@ -17,6 +17,17 @@ type SliderProps = {
 
 export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
 
+    //Smooth video loading
+    const [videoLoaded1, setVideoLoaded1] = useState(false);
+    const [videoLoaded2, setVideoLoaded2] = useState(false);
+    const [videoLoaded3, setVideoLoaded3] = useState(false);
+    const [videoLoaded4, setVideoLoaded4] = useState(false);
+  
+    const handleVideoLoad1 = () => setVideoLoaded1(true);
+    const handleVideoLoad2 = () => setVideoLoaded2(true);
+    const handleVideoLoad3 = () => setVideoLoaded3(true);
+    const handleVideoLoad4 = () => setVideoLoaded4(true);
+
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
     dynamicWidth: window.innerWidth,
@@ -117,8 +128,9 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
         }}
       >
         <SwiperSlide className={"SwiperSlide"} key={1}>
+        {!videoLoaded1 && <div className="video-placeholder"></div>}
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} onLoadedData={handleVideoLoad1} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide1.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -128,8 +140,9 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={2}>
+        {!videoLoaded2 && <div className="video-placeholder"></div>}          
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} onLoadedData={handleVideoLoad2} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide2.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -139,8 +152,9 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={3}>
+        {!videoLoaded3 && <div className="video-placeholder"></div>}   
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} onLoadedData={handleVideoLoad3} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide3.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
@@ -150,8 +164,9 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
             }
         </SwiperSlide>
         <SwiperSlide className={"SwiperSlide"} key={4}>
+        {!videoLoaded4 && <div className="video-placeholder"></div>}   
             {VideoSize.dynamicWidth === "small" ?
-                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} onLoadedData={handleVideoLoad4} preload="metadata">
                     <source src={require("../../../src/images/small/Vibin-Hunks-slide4.mp4")} type='video/mp4'/>
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
