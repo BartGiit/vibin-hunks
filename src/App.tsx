@@ -11,9 +11,11 @@ export const App = () => {
   
   useEffect(() => {
     if (isWelcomePageLoaded) {
-         const button = document.getElementById('LoaderButton');
-     if (button){
+         const button = document.getElementById('ButtonContainer');
+         const loading = document.getElementById('LoadingContainer');         
+     if (button && loading){
       setTimeout(() => {
+      loading.style.display = 'none';
       button.style.display = 'block';
      }, 1000)
     }}

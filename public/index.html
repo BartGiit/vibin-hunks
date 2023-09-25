@@ -58,6 +58,21 @@
             height:55px;
             margin-top: 10px;
             margin-bottom:50px;
+            display:none;
+        }
+
+        #spinner-overlay #LoadingContainer {
+            width:200px;
+            height:55px;
+            margin-top: 10px;
+            margin-bottom:50px;
+            text-align: center;
+            color: white;
+            font-family: Lato;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 55px;
         }
 
         #spinner-overlay #LoaderButton {
@@ -70,7 +85,6 @@
             box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             letter-spacing: 2px;
             text-decoration: none;
-            display:none;
             color: white;
             font-family: Lato;
             font-weight: 700;
@@ -308,6 +322,7 @@
         <div class="additionalLoading" id="DumbbellMid"></div>
         <div class="additionalLoading" id="DumbbellSmall"></div>                                    
         </div>
+        <div id="LoadingContainer"><p>Loading...</p></div>  
         <div id="ButtonContainer">
             <div id="LoaderButton" onclick="hideOverlayInit()">Explore!</div>
         </div>            
