@@ -61,6 +61,13 @@
             display:none;
         }
 
+        #spinner-overlay #ButtonContainer:hover {
+            cursor:pointer;
+            width:205px;
+            height:58px;
+            margin-top: 7px;
+        }
+
         #spinner-overlay #LoadingContainer {
             width:200px;
             height:55px;
@@ -73,6 +80,12 @@
             font-size: 18px;
             letter-spacing: 2px;
             line-height: 55px;
+        }
+
+        #spinner-overlay #LoaderButton:hover{
+            line-height:58px;
+            font-size: 19px;
+            letter-spacing: 3px;
         }
 
         #spinner-overlay #LoaderButton {
@@ -139,8 +152,7 @@
             top: -290px;
             right: -160px;
             animation-name: floatingTwo;
-            animation-duration: 4s;
-            animation-delay: 2s;            
+            animation-duration: 4s;          
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             background-image: url("%PUBLIC_URL%/Dumbbell_small.png");
@@ -168,15 +180,6 @@
                 height: 230px;
                 top: -190px;
                 right: -120px;
-                animation-name: floatingTwo;
-                animation-duration: 4s;
-                animation-delay: 2s;            
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                background-image: url("%PUBLIC_URL%/Dumbbell_small.png");
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                background-position: center center;
             }  
         }
         @media(max-width:1300px){
@@ -199,15 +202,6 @@
                 height: 230px;
                 top: -190px;
                 right: -120px;
-                animation-name: floatingTwo;
-                animation-duration: 4s;
-                animation-delay: 2s;            
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                background-image: url("%PUBLIC_URL%/Dumbbell_small.png");
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                background-position: center center;
             }  
         }
         @media(max-width:900px){
@@ -230,15 +224,6 @@
                 height: 200px;
                 top: -170px;
                 right: -100px;
-                animation-name: floatingTwo;
-                animation-duration: 4s;
-                animation-delay: 2s;            
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                background-image: url("%PUBLIC_URL%/Dumbbell_small.png");
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                background-position: center center;
             }  
         }
         @media(max-width:700px){
@@ -270,7 +255,17 @@
                 height: 180px;
                 top: -250px;
                 right: -100px;
-            }  
+            } 
+                #spinner-overlay #ButtonContainer:hover {
+                width:200px;
+                height:55px;
+                margin-top: 10px;
+            }
+
+            #spinner-overlay #LoadingContainer:hover{
+                line-height:55px;
+                font-size: 18px;
+            } 
         }
         @media(max-width:380px){
             #spinner-overlay #DumbbellBig {
