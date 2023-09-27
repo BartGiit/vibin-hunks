@@ -24,7 +24,7 @@ export const Description = (props: DescriptionProps) => {
                   observer.unobserve(entry.target);
               }
           });
-      }, { threshold: 0.4 });
+      }, { threshold: 0.3 });
   
       if (descriptionRef.current) {
           descriptionRef.current.id = props.id; 
