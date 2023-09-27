@@ -10,7 +10,7 @@ export const Hunks10k = () => {
       <div className={"Hunks10k"}>
         <Additional additionalName="dumbbell" additionalFloat={""}/>
         <Additional additionalName="protein" additionalFloat={"Two"}/>
-        <Description marginLeft="auto" marginRight="17.5%" align="right" titleFirst="Vibin'" titleSecond="Hunks" descriptionFirst="Vibin' Hunks are digital gym buffs who love lifting weights, cracking jokes and vibing with friends." descriptionSecond="They are a digital art collection of 10k NFTs based on Ethereum - combining 3d characters, animation, and pure testosterone."/>
+        <Description id="description1" marginLeft="auto" marginRight="17.5%" align="right" titleFirst="Vibin'" titleSecond="Hunks" descriptionFirst="Vibin' Hunks are digital gym buffs who love lifting weights, cracking jokes and vibing with friends." descriptionSecond="They are a digital art collection of 10k NFTs based on Ethereum - combining 3d characters, animation, and pure testosterone."/>
         <Slider/>
         <img src={desktopRepsImage} alt="Hunks reps"/>
       </div>

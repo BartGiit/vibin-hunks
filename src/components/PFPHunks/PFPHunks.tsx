@@ -10,7 +10,7 @@ export const PFPHunks = () => {
         <Additional additionalName="gallon" additionalFloat={""}/>
         <Additional additionalName="shaker" additionalFloat={"Two"}/>
         <Gallery/>
-        <Description marginLeft="17.5%" marginRight="auto" align="left" titleFirst="PFP" titleSecond="Hunks" descriptionFirst="PFP Hunks is your classic profile picture NFT collection but “on steroids”." descriptionSecond="Their proudly expressed masculinity will make you stand out compared to any other users’ wacky PFPs. Those Ethereum based portraits are depicting characters of the animated Vibin’ Hunks collection."/>
+        <Description id="description2" marginLeft="17.5%" marginRight="auto" align="left" titleFirst="PFP" titleSecond="Hunks" descriptionFirst="PFP Hunks is your classic profile picture NFT collection but “on steroids”." descriptionSecond="Their proudly expressed masculinity will make you stand out compared to any other users’ wacky PFPs. Those Ethereum based portraits are depicting characters of the animated Vibin’ Hunks collection."/>
       </div>
     );
   }
