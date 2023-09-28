@@ -26,6 +26,15 @@
     letter-spacing:3px;
 }
 
+.SingleCreator .Info.fade-in-top{
+    opacity: 1;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.SingleCreator .Info{
+    opacity: 0;
+}
+
 .SingleCreator .Info .Title{
     margin-top:50px;
     font-size:40px;

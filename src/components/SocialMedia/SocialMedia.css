@@ -61,6 +61,12 @@
     text-transform:uppercase;
     letter-spacing:4px;
     font-weight:900;
+    opacity: 0;
+}
+
+.SocialMedia .Text .Love.fade-in-top{
+    opacity: 1;
+    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .SocialMedia .Text .Icons{
@@ -198,6 +204,7 @@
         display:none;
     }
     .SocialMedia .Image p{
+        opacity:0;
         display:block;
         margin-top:30px;
         width:500px;
@@ -209,6 +216,10 @@
         font-weight:900;
         text-align:center;
         color:white;
+    }
+    .SocialMedia .Image p.fade-in-top{
+        opacity: 1;
+        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .SocialMedia .Image{
         flex-direction:column;
