@@ -5,7 +5,7 @@ import './Additional.css'
 interface AdditionalProps {
      additionalName: string;
      additionalFloat: "Two" | "";
-  }
+ }
 
 export const Additional = (props:AdditionalProps) => {
 

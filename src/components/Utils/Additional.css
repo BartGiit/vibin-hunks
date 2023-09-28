@@ -24,11 +24,11 @@
 }
 
 .Additional:hover{
-    cursor:pointer;
+    cursor:pointer !important;
 }
 
 .Additional.Two:hover{
-    cursor:pointer;
+    cursor:pointer !important;
 }
 
 @keyframes floating {

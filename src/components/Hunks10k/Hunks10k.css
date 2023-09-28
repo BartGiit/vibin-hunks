@@ -26,12 +26,14 @@
     left:4%;
     top:7%;
     position:absolute;
+    z-index:2
 }
 
 .Hunks10k .Draggable.Two{
     left:4%;
     top:70%;
     position:absolute;
+    z-index:2
 }
 
 @media (max-width:1300px){

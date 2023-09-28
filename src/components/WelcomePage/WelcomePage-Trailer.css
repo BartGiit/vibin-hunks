@@ -12,7 +12,6 @@
     line-height:55px;
     margin-top:5px;
     text-align:center;
-    background-color:rgb(255, 255, 255, 0.15);
     border-radius:29px;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     letter-spacing:2px;
@@ -21,6 +20,26 @@
     font-family:Lato;
     font-weight:700;
     font-size:16px;
+    background: rgb(255, 255, 255, 0.15);
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.15) 25%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0.15) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.5s infinite;
+}
+
+.Trailer .Btn:hover{
+    line-height:58px; 
+    transform: scale(1.025);
+}
+
+.Trailer .Btn:active {
+    animation-name: buttonPressDown;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (max-height: 700px){
@@ -29,6 +48,10 @@
         width:220px;
         height:45px;
         line-height:45px;
+    }
+    .Trailer .Btn:hover{
+        line-height:48px; 
+        transform: scale(1.025);
     }
 }
 
@@ -39,6 +62,10 @@
         height: 38px;
         line-height:38px;
     }
+    .Trailer .Btn:hover{
+        line-height:38px;
+        transform: scale(1);
+    }
 }
 
 @media (max-height: 360px) and (orientation: landscape){
@@ -46,6 +73,9 @@
         margin-top:1px;
         width:180px;
         height: 32px;
+        line-height:32px;
+    }
+    .Trailer .Btn:hover{
         line-height:32px;
     }
 }
@@ -57,6 +87,9 @@
         height: 24px;
         line-height:24px;
     }
+    .Trailer .Btn:hover{
+        line-height:24px;
+    }
 }
 
 @media (max-width: 360px){
@@ -64,6 +97,9 @@
         margin-top:1px;
         width:180px;
         height: 38px;
+        line-height:38px;
+    }
+    .Trailer .Btn:hover{
         line-height:38px;
     }
 }

@@ -64,7 +64,7 @@
 
         #spinner-overlay #ButtonContainer:hover {
             cursor:pointer;
-            transform: scale(1.025) translateY(2.5px);
+            transform: scale(1.025);
         }
 
         #spinner-overlay #LoadingContainer {
@@ -104,7 +104,6 @@
 
         #spinner-overlay #LoaderButton:hover{
             line-height:58px;
-            transform: translateY(-3px) scale(1.025);
         }
 
         .additionalLoading {
@@ -256,7 +255,7 @@
                 right: -100px;
             } 
             #spinner-overlay #ButtonContainer:hover {
-                transform: scale(1) translateY(0px);
+                transform: scale(1);
             }
 
             #spinner-overlay #LoaderButton:hover{
@@ -299,8 +298,17 @@
 
         @keyframes buttonPressDown {
             0%   {transform: scale(1); opacity: 1;}
-            50%  {transform: scale(0.92); opacity: 0.8;}
+            50%  {transform: scale(0.95); opacity: 0.8;}
             100% {transform: scale(1); opacity: 1;}
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+            100% {
+                background-position: 200% 0;
+            }
         }
 
         #LoaderButton {
@@ -319,15 +327,6 @@
             animation-name: buttonPressDown;
             animation-duration: 0.4s;
             animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        @keyframes shimmer {
-            0% {
-                background-position: -200% 0;
-            }
-            100% {
-                background-position: 200% 0;
-            }
         }
 
 
