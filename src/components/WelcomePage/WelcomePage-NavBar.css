@@ -61,12 +61,12 @@
 .NavBar .NavImg{
     min-width:220px;
     max-width:220px;
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:auto;
 }
 
 .NavBar .NavImg img{
-    width:65%;
+    width:46%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -83,7 +83,7 @@
 .NavBar .NavImg .BackGround{
     position:absolute;
     width:100vw;
-    height:180%;
+    height:226%;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.01);
