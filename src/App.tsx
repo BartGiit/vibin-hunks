@@ -8,6 +8,9 @@ import { Background } from './components/Utils/Background';
 
 export const App = () => {
   const [isWelcomePageLoaded, setIsWelcomePageLoaded] = useState(false);
+
+  const hunks10kRef = React.useRef(null);
+  const pfpHunksRef = React.useRef(null);
   
   useEffect(() => {
     if (isWelcomePageLoaded) {
@@ -46,9 +49,13 @@ export const App = () => {
 
   return (
     <div style = {{ position: "relative", overflow: "hidden"}}>
-      <WelcomePage onLoaded={() => setIsWelcomePageLoaded(true)} />
-      <Hunks10k/>
-      <PFPHunks/>
+      <WelcomePage onLoaded={() => setIsWelcomePageLoaded(true)} hunks10kRef={hunks10kRef} pfpHunksRef={pfpHunksRef}/>
+      <div ref={hunks10kRef}>
+          <Hunks10k/>
+      </div>
+      <div ref={pfpHunksRef}>
+          <PFPHunks/>
+      </div>
       <Creators/>
       <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />
       {isMobile ? null : (<Background fullHeight={distanceFromBottom}/>)}

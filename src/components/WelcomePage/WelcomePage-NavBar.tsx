@@ -6,10 +6,20 @@ import logo from '../../../src/images/logoNoShadow.svg';
 import collections from '../../../src/images/text/collections.svg';
 import vibeWithUs from '../../../src/images/text/vibeWithUs.svg';
 
-export const NavBar = () => {
+type NavBarProps = {
+  hunks10kRef: React.RefObject<HTMLDivElement>;
+  pfpHunksRef: React.RefObject<HTMLDivElement>;
+};
+
+export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
      const navRef = useRef<HTMLDivElement>(null);
      const [scrollActive, setScrollActive] = useState(false);
      const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+     //Function scroll
+     const scrollToComponent = (componentRef:any) => {
+      componentRef.current.scrollIntoView({ behavior: 'smooth', block: "center" });
+    }
 
      //Function that adds blur
 
@@ -47,8 +57,8 @@ export const NavBar = () => {
           <div className={"NavList"} ref={navRef}>
                <button onClick={toggleNavBar}><FaTimes/></button>  
                <img src={collections} className={"Mobile"} alt="NFT Collections 3D Hunks"/>
-               <p>VIBIN' HUNKS</p>
-               <p className={"NavListSpace"}>PFP HUNKS</p>
+               <p onClick={() => scrollToComponent(hunks10kRef)}>VIBIN' HUNKS</p>
+               <p className={"NavListSpace"} onClick={() => scrollToComponent(pfpHunksRef)}>PFP HUNKS</p>
                <div className={"RowFlex"}>
                <a href="toBeAdded" target="_blank"><FaTwitter className={"NavListSvg"}/></a>
                <a href="toBeAdded" target="_blank"><FaInstagram className={"NavListSvg"}/></a>

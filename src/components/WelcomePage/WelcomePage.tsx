@@ -6,9 +6,11 @@ import './WelcomePage.css';
 
 interface WelcomePageProps {
   onLoaded: () => void;
+  hunks10kRef: React.RefObject<HTMLDivElement>;
+  pfpHunksRef: React.RefObject<HTMLDivElement>;
 }
 
-export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded }) => {
+export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded, hunks10kRef, pfpHunksRef }) => {
 
   const [VideoSize, setVideoSize] = useState(
     window.innerWidth > 1220 ?
@@ -37,7 +39,7 @@ export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded }) => {
       <div className={"BlueBackground"}>
       <video autoPlay loop muted playsInline><source src={require("../../../src/images/background/blue_background.mp4")} type='video/mp4'/></video>
       </div>
-      <NavBar />
+      <NavBar hunks10kRef={hunks10kRef} pfpHunksRef={pfpHunksRef} />
       <Slider
         VideoSize={VideoSize}
         setVideoSize={setVideoSize}
