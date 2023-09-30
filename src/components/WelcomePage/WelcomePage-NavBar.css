@@ -45,6 +45,10 @@
     font-weight:600;
 }
 
+.NavBar .NavList p:hover{
+    cursor:pointer
+}
+
 .NavBar .NavList a{
     width:38px;
     height:38px;

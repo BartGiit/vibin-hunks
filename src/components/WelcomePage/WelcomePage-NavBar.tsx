@@ -20,7 +20,9 @@ export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
      const scrollToComponent = (componentRef:any) => {
       if(window.innerWidth<550){
         toggleNavBar();
-        componentRef.current.scrollIntoView({ behavior: 'smooth'})
+        const offset = 40;
+        const yPosition = componentRef.current.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: yPosition, behavior: 'smooth' });
       }else{
         componentRef.current.scrollIntoView({ behavior: 'smooth', block: "center" })
       }
