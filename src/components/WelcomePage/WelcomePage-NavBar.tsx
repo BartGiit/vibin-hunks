@@ -18,10 +18,12 @@ export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
 
      //Function scroll
      const scrollToComponent = (componentRef:any) => {
-      componentRef.current.scrollIntoView({ behavior: 'smooth', block: "center" })
       if(window.innerWidth<550){
-        toggleNavBar()
-      };
+        toggleNavBar();
+        componentRef.current.scrollIntoView({ behavior: 'smooth'})
+      }else{
+        componentRef.current.scrollIntoView({ behavior: 'smooth', block: "center" })
+      }
     }
 
      //Function that adds blur
