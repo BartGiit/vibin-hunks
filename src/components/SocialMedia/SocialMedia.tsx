@@ -88,7 +88,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
         <p ref={pRef} className={`${isLoveVisible ? 'fade-in-top' : ''}`}>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
         <div className='Angel'>
-          {Mobile ? <video autoPlay loop muted playsInline><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <AngelCanvas children={undefined}/> }
+          {Mobile ? <video autoPlay loop muted playsInline poster={require('../../../src/images/socialMedia/amor.jpeg')}><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <AngelCanvas children={undefined}/> }
         </div>
       </div>
     </div>
