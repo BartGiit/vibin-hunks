@@ -46,7 +46,8 @@
 }
 
 .NavBar .NavList p:hover{
-    cursor:pointer
+    cursor:pointer;
+    color:#FEC65A;
 }
 
 .NavBar .NavList a{
