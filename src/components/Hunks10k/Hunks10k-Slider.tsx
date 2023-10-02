@@ -6,7 +6,7 @@ import 'swiper/css/effect-cards';
 import './Hunks10k-Slider.css';
 
 export const Slider = () => {
-    const Slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    const Slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
     // useState to control the visibility of InstructionSwipe
     const [showInstruction, setShowInstruction] = useState(true);
