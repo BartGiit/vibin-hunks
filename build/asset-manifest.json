@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vibin-hunks/static/css/main.7bd41851.css",
-    "main.js": "/vibin-hunks/static/js/main.4ac14f1f.js",
+    "main.js": "/vibin-hunks/static/js/main.797177e8.js",
     "static/js/787.d490d84b.chunk.js": "/vibin-hunks/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-slide2.mp4": "/vibin-hunks/static/media/Vibin-Hunks-slide2.f0e010bc019b8e83a840.mp4",
     "static/media/Vibin-Hunks-slide1.mp4": "/vibin-hunks/static/media/Vibin-Hunks-slide1.6e5a42f740f38282ac6d.mp4",
@@ -11,21 +11,19 @@
     "static/media/swipe.mp4": "/vibin-hunks/static/media/swipe.a85bb7ee34eb0629ebc3.mp4",
     "static/media/amor_mobile.mp4": "/vibin-hunks/static/media/amor_mobile.148df10af493c627548b.mp4",
     "static/media/tap.mp4": "/vibin-hunks/static/media/tap.5c57e8168a2e44c0c8ae.mp4",
-    "static/media/Vibin-Hunks-Slide9.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide9.a447bfad6835850d1e45.mp4",
+    "static/media/Vibin-Hunks-Slide8.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide8.a447bfad6835850d1e45.mp4",
     "static/media/Vibin-Hunks-Slide1.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide1.6722cbf4780e55976113.mp4",
     "static/media/Vibin-Hunks-Slide5.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide5.8aed8a6148eb0f167c20.mp4",
-    "static/media/Vibin-Hunks-Slide12.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide12.60c7a352487eefcf712f.mp4",
-    "static/media/Vibin-Hunks-Slide13.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide13.b015c01aff941a2465e8.mp4",
-    "static/media/Vibin-Hunks-Slide10.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide10.d801a51754cacf32c98e.mp4",
+    "static/media/Vibin-Hunks-Slide10.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide10.60c7a352487eefcf712f.mp4",
+    "static/media/Vibin-Hunks-Slide11.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide11.b015c01aff941a2465e8.mp4",
+    "static/media/Vibin-Hunks-Slide9.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide9.d801a51754cacf32c98e.mp4",
     "static/media/swipe.webm": "/vibin-hunks/static/media/swipe.5654de906d203becbd8a.webm",
     "static/media/Vibin-Hunks-Slide4.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide4.5523403293e9c89cdf3a.mp4",
     "static/media/Vibin-Hunks-Slide3.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide3.e519aa740c6ae99ef206.mp4",
     "static/media/Vibin-Hunks-Slide2.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide2.1ab9da729dfbb3e3d4bd.mp4",
-    "static/media/Vibin-Hunks-Slide8.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide8.f8a5118431c52c941c23.mp4",
     "static/media/desktopCreators.svg": "/vibin-hunks/static/media/desktopCreators.c69d5988441ce9ef5ecbc2e786b7566e.svg",
     "static/media/Vibin-Hunks-Slide6.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide6.b272c731c1b4e6887223.mp4",
     "static/media/Vibin-Hunks-Slide7.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide7.6a6c5a6005474b5d7d30.mp4",
-    "static/media/Vibin-Hunks-Slide11.mp4": "/vibin-hunks/static/media/Vibin-Hunks-Slide11.2b6b03b6edd79af029db.mp4",
     "static/media/tap.webm": "/vibin-hunks/static/media/tap.bac026d2f472c550de36.webm",
     "static/media/desktopYouKnow.svg": "/vibin-hunks/static/media/desktopYouKnow.4885c3eb7e013051eeb84a8c193b6dda.svg",
     "static/media/Vibin-Hunks-slide2-poster.jpeg": "/vibin-hunks/static/media/Vibin-Hunks-slide2-poster.3fef202541d4ad0fe10d.jpeg",
@@ -65,11 +63,11 @@
     "static/media/ellipseThree.svg": "/vibin-hunks/static/media/ellipseThree.5249cf35983c713b4e1b1cab3f78492c.svg",
     "static/media/ellipseOne.svg": "/vibin-hunks/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
     "main.7bd41851.css.map": "/vibin-hunks/static/css/main.7bd41851.css.map",
-    "main.4ac14f1f.js.map": "/vibin-hunks/static/js/main.4ac14f1f.js.map",
+    "main.797177e8.js.map": "/vibin-hunks/static/js/main.797177e8.js.map",
     "787.d490d84b.chunk.js.map": "/vibin-hunks/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bd41851.css",
-    "static/js/main.4ac14f1f.js"
+    "static/js/main.797177e8.js"
   ]
 }
