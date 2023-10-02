@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -6,14 +6,26 @@ import 'swiper/css/effect-cards';
 import './Hunks10k-Slider.css';
 
 export const Slider = () => {
-    const Slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
-    // useState to control the visibility of InstructionSwipe
+    const Slides = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
     const [showInstruction, setShowInstruction] = useState(true);
-    
-    // Track touch events and active index
     const [touchStartedIndex, setTouchStartedIndex] = useState<number | null>(null);
+    const swiperRef = useRef<any>(null);
 
+    const handleSlideChange = () => {
+        if (swiperRef.current) {
+            const swiper = swiperRef.current.swiper;
+            const videos = document.querySelectorAll('video');
+            
+            // Pause all videos
+            videos.forEach(video => video.pause());
+            
+            // Play the video of the active slide
+            const activeVideo = swiper.slides[swiper.activeIndex].querySelector('video');
+            if (activeVideo) {
+                activeVideo.play();
+            }
+        }
+    };
 
     return (
         <>
@@ -28,6 +40,7 @@ export const Slider = () => {
                 )}
                 
                 <Swiper
+                    ref={swiperRef}
                     effect={"cards"}
                     grabCursor={true}
                     modules={[EffectCards, Autoplay]}
@@ -52,12 +65,12 @@ export const Slider = () => {
                             }, 600);
                         }
                     }}
-                    
+                    onSlideChangeTransitionEnd={handleSlideChange}
                     className="mySwiper"
                 >
                     {Slides.map(slide => 
                         <SwiperSlide key={slide}>
-                            <video autoPlay loop muted playsInline>
+                            <video loop muted playsInline>
                                 <source src={require(`../../../src/images/Hunks10k/Vibin-Hunks-Slide${slide}.mp4`)} type='video/mp4'/>
                             </video>
                         </SwiperSlide>
@@ -67,5 +80,3 @@ export const Slider = () => {
         </>
     );
 }
-
-

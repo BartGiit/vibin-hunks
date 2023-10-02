@@ -12,6 +12,7 @@
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/swiper": "^6.0.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
