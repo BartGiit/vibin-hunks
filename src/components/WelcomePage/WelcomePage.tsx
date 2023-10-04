@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {NavBar} from './WelcomePage-NavBar';
 import {Slider} from './WelcomePage-Slider';
 import {Trailer} from './WelcomePage-Trailer';
@@ -20,20 +20,6 @@ export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded, hunks10kRef,
         { dynamicWidth: "small" }
   );
 
-  const handleVideoLoaded = () => {
-    if (onLoaded) onLoaded();
-  };
-
-  useEffect(() => {
-    const videoElement = document.querySelector('.BlueBackground video');
-    if (videoElement) {
-      videoElement.addEventListener('canplaythrough', handleVideoLoaded);
-      return () => {
-        videoElement.removeEventListener('canplaythrough', handleVideoLoaded);
-      };
-    }
-  }, []);
-
   return (
     <div className={"WelcomePage"}>
       <div className={"BlueBackground"}>
@@ -43,6 +29,7 @@ export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded, hunks10kRef,
       <Slider
         VideoSize={VideoSize}
         setVideoSize={setVideoSize}
+        onReady={onLoaded}  // Pass onLoaded to the Slider as onReady
       />
       <Trailer />
     </div>

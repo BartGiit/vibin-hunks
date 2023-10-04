@@ -100,15 +100,15 @@
     position:relative;
 }
 
-.SocialMedia .Image .Angel div{
-    width:100%;
-    height:100%;
+.SocialMedia .Image .Angel video{
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .SocialMedia .Image img.textSVGthird{
     position:absolute;
-    left:8%;
-    top:12%;
+    left:9%;
+    top:9%;
     width:200px;
     animation-name: floatingImgSmThree;
     animation-duration: 4s;
@@ -191,8 +191,7 @@
     }
 
     .SocialMedia .Image img.textSVGthird{
-        left:-2%;
-        top:28%;
+        top:24%;
     }
 
     .SocialMedia{

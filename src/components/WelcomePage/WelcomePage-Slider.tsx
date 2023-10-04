@@ -12,9 +12,10 @@ type SliderProps = {
     dynamicWidth: string;
   };
   setVideoSize: Dispatch<SetStateAction<{ dynamicWidth: string }>>;
+  onReady?: () => void;
 };
 
-export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
+export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize, onReady }) => {
 
   // useState WindowWidth, VideoSize
   const [WindowWidth, setWindowWidth] = useState({
@@ -68,6 +69,12 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize }) => {
     };
 
     window.addEventListener('resize', handleResize);
+
+    // Invoke the onReady callback when the Slider mounts
+    if (onReady) {
+        onReady();
+    }
+
     return () => {
         window.removeEventListener('resize', handleResize);
     };
