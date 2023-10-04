@@ -6,7 +6,6 @@ import desktopDoItImage from '../../../src/images/text/desktopDoIt.svg';
 import mobileDoItImage from '../../../src/images/text/mobileDoIt.svg';
 import desktopYouKnowImage from '../../../src/images/text/desktopYouKnow.svg';
 import logo from '../../../src/images/logoNoShadow.svg';
-import AngelCanvas from '../Utils/CanvasAngel';
 import BlueBackground from "../../../src/images/background/blue_background.mp4";
 
 export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (distance: number) => void; Mobile: boolean }) => {
@@ -88,7 +87,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
         <p ref={pRef} className={`${isLoveVisible ? 'fade-in-top' : ''}`}>Show us your love!</p>
         <img className="textSVGthird" src={desktopYouKnowImage} alt="Hunks Social Media NFT" />
         <div className='Angel'>
-          {Mobile ? <video autoPlay loop muted playsInline poster={require('../../../src/images/socialMedia/amor.jpeg')}><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <AngelCanvas children={undefined}/> }
+          {Mobile ? <video autoPlay loop muted playsInline poster={require('../../../src/images/socialMedia/amor.jpeg')}><source src={require("../../../src/images/socialMedia/amor_mobile.mp4")} type='video/mp4'/></video> : <video autoPlay loop muted playsInline><source src={require("../../../src/images/socialMedia/amor.webm")} type='video/webm'/></video> }
         </div>
       </div>
     </div>

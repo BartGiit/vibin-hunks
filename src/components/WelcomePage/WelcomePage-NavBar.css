@@ -20,6 +20,7 @@
     width:85%;
     margin-top:30px;
     margin-right: 60px;
+    align-items: flex-start;
 }
 
 .NavBar .NavList .SmallLogo{
@@ -41,6 +42,7 @@
     letter-spacing:2px;
     color:white;
     font-size:24px;
+    line-height:24px;
     font-family:Rokkitt;
     font-weight:600;
 }
@@ -96,6 +98,7 @@
     z-index:-1;
     opacity:0;
     transition:0.8s;
+    display:none;
 }
 
 @media (max-width: 1060px){
@@ -146,6 +149,7 @@
 
     .NavBar .NavImg .BackGround.Active{
         opacity:1;
+        display:block;
     }
 
     .NavBar .NavList{

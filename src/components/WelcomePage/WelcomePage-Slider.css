@@ -21,6 +21,14 @@
     bottom:0;
 }
 
+.Slider video{
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    overflow: visible;
+}
+
 .Slider img{
     position:absolute;
     z-index: 2;
