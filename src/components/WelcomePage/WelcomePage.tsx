@@ -29,7 +29,7 @@ export const WelcomePage: React.FC<WelcomePageProps> = ({ onLoaded, hunks10kRef,
       <Slider
         VideoSize={VideoSize}
         setVideoSize={setVideoSize}
-        onReady={onLoaded}  // Pass onLoaded to the Slider as onReady
+        onReady={onLoaded}  
       />
       <Trailer />
     </div>
