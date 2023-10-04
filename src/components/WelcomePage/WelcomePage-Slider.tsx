@@ -101,13 +101,13 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize, onReady
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide1.mp4")} type='video/mp4; codecs=hvc1'/>                  
                     <source src={require("../../../src/images/mid/Vibin-Hunks-slide1.webm")} type='video/webm'/>
-                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide1.mp4")} type='video/mp4; codecs=hvc1'/>
                 </video>
                 :
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
-                    <source src={require("../../../src/images/big/Vibin-Hunks-slide1.webm")} type='video/webm'/>
                     <source src={require("../../../src/images/big/Vibin-Hunks-slide1.mp4")} type='video/mp4; codecs=hvc1'/>
+                    <source src={require("../../../src/images/big/Vibin-Hunks-slide1.webm")} type='video/webm'/>
                 </video>
             }
         </SwiperSlide>
@@ -118,13 +118,13 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize, onReady
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
-                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide2.webm")} type='video/webm'/>
                     <source src={require("../../../src/images/mid/Vibin-Hunks-slide2.mp4")} type='video/mp4; codecs=hvc1'/>
+                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide2.webm")} type='video/webm'/>
                 </video>
                 :
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                    <source src={require("../../../src/images/big/Vibin-Hunks-slide2.mp4")} type='video/mp4; codecs=hvc1'/>              
                     <source src={require("../../../src/images/big/Vibin-Hunks-slide2.webm")} type='video/webm'/>
-                    <source src={require("../../../src/images/big/Vibin-Hunks-slide2.mp4")} type='video/mp4; codecs=hvc1'/>
                 </video>
             }
         </SwiperSlide>
@@ -135,13 +135,13 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize, onReady
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide3.mp4")} type='video/mp4; codecs=hvc1'/>                  
                     <source src={require("../../../src/images/mid/Vibin-Hunks-slide3.webm")} type='video/webm'/>
-                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide3.mp4")} type='video/mp4; codecs=hvc1'/>
                 </video>
                 :
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
-                    <source src={require("../../../src/images/big/Vibin-Hunks-slide3.webm")} type='video/webm'/>
                     <source src={require("../../../src/images/big/Vibin-Hunks-slide3.mp4")} type='video/mp4; codecs=hvc1'/>
+                    <source src={require("../../../src/images/big/Vibin-Hunks-slide3.webm")} type='video/webm'/>
                 </video>
             }
         </SwiperSlide>
@@ -152,13 +152,13 @@ export const Slider: React.FC<SliderProps> = ({ VideoSize, setVideoSize, onReady
                 </video>
                 : VideoSize.dynamicWidth === "mid" ?
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide4.mp4")} type='video/mp4; codecs=hvc1'/>                  
                     <source src={require("../../../src/images/mid/Vibin-Hunks-slide4.webm")} type='video/webm'/>
-                    <source src={require("../../../src/images/mid/Vibin-Hunks-slide4.mp4")} type='video/mp4; codecs=hvc1'/>
                 </video>
                 :
                 <video autoPlay loop muted playsInline key={VideoSize.dynamicWidth} preload="metadata">
+                    <source src={require("../../../src/images/big/Vibin-Hunks-slide4.mp4")} type='video/mp4; codecs=hvc1'/>                  
                     <source src={require("../../../src/images/big/Vibin-Hunks-slide4.webm")} type='video/webm'/>
-                    <source src={require("../../../src/images/big/Vibin-Hunks-slide4.mp4")} type='video/mp4; codecs=hvc1'/>
                 </video>
             }
         </SwiperSlide>
