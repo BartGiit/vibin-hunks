@@ -9,6 +9,8 @@ import { Background } from './components/Utils/Background';
 export const App = () => {
   const [isWelcomePageLoaded, setIsWelcomePageLoaded] = useState(false);
 
+  const [activeColor, setActiveColor] = useState("#97A5FF");
+
   const hunks10kRef = React.useRef(null);
   const pfpHunksRef = React.useRef(null);
   
@@ -20,7 +22,8 @@ export const App = () => {
       setTimeout(() => {
       loading.style.display = 'none';
       button.style.display = 'block';
-     }, 1000)
+      setActiveColor("#97A5FF");
+     }, 2500)
     }}
   }, [isWelcomePageLoaded]);
 
@@ -58,7 +61,7 @@ export const App = () => {
       </div>
       <Creators/>
       <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />
-      {isMobile ? null : (<Background fullHeight={distanceFromBottom}/>)}
+      {isMobile ? null : (<Background fullHeight={distanceFromBottom} col={activeColor} key="activebg"/>)}
     </div>
  );
 };
