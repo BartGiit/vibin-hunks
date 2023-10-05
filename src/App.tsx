@@ -13,17 +13,18 @@ export const App = () => {
 
   const hunks10kRef = React.useRef(null);
   const pfpHunksRef = React.useRef(null);
-  
+
   useEffect(() => {
     if (isWelcomePageLoaded) {
          const button = document.getElementById('ButtonContainer');
          const loading = document.getElementById('LoadingContainer');         
      if (button && loading){
+      window.scrollTo(0, 1);
       setActiveColor("#97A5FF");
       setTimeout(() => {
       loading.style.display = 'none';
       button.style.display = 'block';
-     }, 4000)
+     }, 2700)
     }}
   }, [isWelcomePageLoaded]);
 
