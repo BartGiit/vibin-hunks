@@ -23,7 +23,7 @@ export const App = () => {
       setTimeout(() => {
       loading.style.display = 'none';
       button.style.display = 'block';
-     }, 2500)
+     }, 4000)
     }}
   }, [isWelcomePageLoaded]);
 
