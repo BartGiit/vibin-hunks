@@ -19,8 +19,8 @@ export const App = () => {
          const button = document.getElementById('ButtonContainer');
          const loading = document.getElementById('LoadingContainer');         
      if (button && loading){
-      setTimeout(() => {
       setActiveColor("#97A5FF");
+      setTimeout(() => {
       loading.style.display = 'none';
       button.style.display = 'block';
      }, 2500)
