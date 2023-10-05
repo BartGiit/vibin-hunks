@@ -20,9 +20,9 @@ export const App = () => {
          const loading = document.getElementById('LoadingContainer');         
      if (button && loading){
       setTimeout(() => {
+      setActiveColor("#97A5FF");
       loading.style.display = 'none';
       button.style.display = 'block';
-      setActiveColor("#97A5FF");
      }, 2500)
     }}
   }, [isWelcomePageLoaded]);

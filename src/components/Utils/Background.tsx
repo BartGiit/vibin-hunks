@@ -19,7 +19,7 @@ interface HeightProps {
           top: "0",
           zIndex: "-9999",
           height: `${props.fullHeight}px`,
-          backgroundColor: props.col}}>
+          backgroundColor: props.col}} key="12345">
             <div className={"EllipseOne"} style={{backgroundImage:`url("${ellipseOne}")`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat"}} />
             <div className={"EllipseTwo"} style={{backgroundImage:`url("${ellipseTwo}")`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat"}} />
             <div className={"EllipseThree"} style={{backgroundImage:`url("${ellipseThree}")`, backgroundSize:"100% 100%", backgroundRepeat:"no-repeat"}} />
