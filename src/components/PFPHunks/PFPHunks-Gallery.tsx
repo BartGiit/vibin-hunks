@@ -65,10 +65,34 @@ export const Gallery = () => {
   }
 
   const handleClick = (e: any) => {
-    e.currentTarget.style.zIndex === "3" 
-      ? changeImage(e.currentTarget.className) 
-      : changeIndex(e.currentTarget.style.zIndex);
-  }
+  const thirdDiv = document.querySelector('.Third') as HTMLElement | null;
+
+
+    if (window.innerWidth <= 550) {
+        if (e.currentTarget.className === "First" || e.currentTarget.className === "Second") {
+          if(thirdDiv?.style.zIndex === "1"){
+            if (e.currentTarget.style.zIndex === "3" || e.currentTarget.style.zIndex === "2" ){
+                changeImage(e.currentTarget.className)
+            } else {
+                changeIndex(e.currentTarget.style.zIndex);
+            }
+          }else{
+            e.currentTarget.style.zIndex === "3"
+            ? changeImage(e.currentTarget.className)
+            : changeIndex(e.currentTarget.style.zIndex);
+          }
+        } else {
+            e.currentTarget.style.zIndex === "3"
+                ? changeImage(e.currentTarget.className)
+                : changeIndex(e.currentTarget.style.zIndex);
+        }
+    } else {
+        e.currentTarget.style.zIndex === "3"
+            ? changeImage(e.currentTarget.className)
+            : changeIndex(e.currentTarget.style.zIndex);
+    }
+}
+
 
     return (
       <div className={"Gallery"} onMouseDown={() => setShowInstruction(false)}>
