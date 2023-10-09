@@ -27,7 +27,7 @@
     margin-right: auto;
     object-fit: cover;
     overflow: visible;
-    clip-path: inset(1px 1px);
+    clip-path: inset(3px 3px);
 }
 
 .Slider img{
