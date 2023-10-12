@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Creators } from './components/Creators/Creators';
 import { Hunks10k } from './components/Hunks10k/Hunks10k';
-import { PFPHunks } from './components/PFPHunks/PFPHunks';
 import { SocialMedia } from './components/SocialMedia/SocialMedia';
 import { WelcomePage } from './components/WelcomePage/WelcomePage';
 import { Background } from './components/Utils/Background';
+import { IncognitoHunks } from './components/IncognitoHunks/IncognitoHunks';
 
 export const App = () => {
   const [isWelcomePageLoaded, setIsWelcomePageLoaded] = useState(false);
@@ -58,7 +58,7 @@ export const App = () => {
           <Hunks10k/>
       </div>
       <div ref={pfpHunksRef}>
-          <PFPHunks/>
+          <IncognitoHunks/>
       </div>
       <Creators/>
       <SocialMedia onHeightChange={handleHeightChange} Mobile={isMobile} />

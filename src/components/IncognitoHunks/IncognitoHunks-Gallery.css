@@ -1,41 +1,26 @@
-.PFPHunks .Gallery{
+.IncognitoHunks .Gallery{
     width:50%;
     height:100%;
     max-width:900px;
     position:relative;
 }
 
-.PFPHunks div.First{
+.IncognitoHunks div.First{
     position:relative;
     overflow:hidden;
 }
 
-.PFPHunks div.Second{
+.IncognitoHunks div.Second{
     position:relative;
     overflow:hidden;
 }
 
-.PFPHunks div.Third{
+.IncognitoHunks div.Third{
     position:relative;
     overflow:hidden;
 }
 
-.PFPHunks .Gallery .InstructionTap{
-    position:absolute;
-    width:220px;
-    height:220px;
-    left:80%;
-    top:60%;
-    z-index:4;
-    pointer-events: none;
-}
-
-.PFPHunks .Gallery .InstructionTap video{
-    width:100%;
-    height:100%
-}
-
-.PFPHunks div img{
+.IncognitoHunks div img{
     position:absolute;
     left:0;
     top:0;
@@ -43,15 +28,15 @@
     height:100%
 }
 
-.PFPHunks div.First{
+.IncognitoHunks div.First{
     width:360px;
     height:360px;
-    left:90px;
+    left:100px;
     top:420px;
     transform:rotate(-18.5deg);
 }
 
-.PFPHunks div.Second{
+.IncognitoHunks div.Second{
     width:380px;
     height:380px;
     left:190px;
@@ -59,15 +44,15 @@
     transform:rotate(-4.5deg);
 }
 
-.PFPHunks div.Third{
+.IncognitoHunks div.Third{
     width:420px;
     height:420px;
-    left:470px;
+    left:440px;
     top:280px;
     transform:rotate(8deg);
 }
 
-.PFPHunks .Gallery div{
+.IncognitoHunks .Gallery div{
     position:absolute;
     cursor: pointer;
     border-radius:24px;
@@ -75,140 +60,128 @@
 }
 
 @media (max-height:900px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:340px;
         height:340px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:360px;
         height:360px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:400px;
         height:400px;
     }
 }
 
 @media (max-width:1650px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:320px;
         height:320px;
-        left:105px;
+        left:115px;
         top:450px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:340px;
         height:340px;
         left:200px;
         top:155px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:380px;
         height:380px;
-        left:440px;
+        left:430px;
         top:310px;
     }
 }
 
 @media (max-width:1550px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:280px;
         height:280px;
-        left:125px;
+        left:130px;
         top:450px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:300px;
         height:300px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:340px;
         height:340px;
-        left:410px;
+        left:400px;
         top:310px;
     }
 }
 
 @media (max-width:1400px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:240px;
         height:240px;
-        left:115px;
+        left:120px;
         top:455px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:260px;
         height:260px;
         left:170px;
         top:215px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:300px;
         height:300px;
-        left:350px;
+        left:340px;
         top:335px;
-    }
-
-    .PFPHunks .Gallery .InstructionTap{
-        width:200px;
-        height:200px;
     }
 }
 
 @media (max-width:1220px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:230px;
         height:230px;
-        left:85px;
+        left:95px;
         top:455px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:250px;
         height:250px;
         left:140px;
         top:215px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:290px;
         height:290px;
         left:320px;
-        top:335px;
-    }
-
-    .PFPHunks .Gallery .InstructionTap{
-        width:180px;
-        height:180px;
-        left:78%;
-        top:55%;
+        top:330px;
     }
 }
 
 @media (max-width:1130px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:210px;
         height:210px;
         left:75px;
-        top:455px;
+        top:430px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:230px;
         height:230px;
         left:130px;
         top:215px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:270px;
         height:270px;
         left:280px;
@@ -217,131 +190,117 @@
 }
 
 @media (max-width:1000px){
-    .PFPHunks .Gallery{
+    .IncognitoHunks .Gallery{
         width:55%;
     }
     
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:190px;
         height:190px;
-        left:45px;
-        top:230px;
+        left:55px;
+        top:220px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:210px;
         height:210px;
         left:100px;
         top:25px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:250px;
         height:250px;
         left:235px;
         top:115px;
     }
-
-    .PFPHunks .Gallery .InstructionTap{
-        width:180px;
-        height:180px;
-        left:72%;
-        top:60%;
-    }
 }
 
 @media (max-width:750px){
-    .PFPHunks .Gallery{
+    .IncognitoHunks .Gallery{
         margin-top:40px;
         width:62%;
     }
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         left:15px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         left:70px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         left:205px;
     }
 }
 
 @media (max-width:600px){
-    .PFPHunks .Gallery{
+    .IncognitoHunks .Gallery{
         width:70%;
     }
 }
 
 @media (max-width:570px){
-    .PFPHunks .Gallery{
+    .IncognitoHunks .Gallery{
         width:85%;
         margin-top:8px;
     }
 }
 
 @media (max-width:515px){
-    .PFPHunks .Gallery{
+    .IncognitoHunks .Gallery{
         width:90%;
     }
 }
 
 @media (max-width:500px){
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:200px;
         height:200px;
         left:45px;
         top:155px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:200px;
         height:200px;
         left:105px;
     }
 
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:200px;
         height:200px;
         left:180px;
         top:260px;
     }
-
-    .PFPHunks .Gallery .InstructionTap{
-        width:150px;
-        height:150px;
-        left:32%;
-        top:50%;
-    }
 }
 
 @media (max-width:450px){
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         left:25px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         left:105px;
     }
 
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         left:160px;
     }
 }
 
 @media (max-width:400px){
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:185px;
         height:185px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:185px;
         height:185px;
     }
 
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:185px;
         height:185px;
         left:136px;
@@ -349,19 +308,19 @@
 }
 
 @media (max-width:355px){
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         width:170px;
         height:170px;
         left:8px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         width:170px;
         height:170px;
         left:70px;
     }
 
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         width:170px;
         height:170px;
         left:115px;
@@ -370,15 +329,15 @@
 
 
 @media (max-height:750px) and (min-width:1000px){
-    .PFPHunks div.First{
+    .IncognitoHunks div.First{
         top:410px;
     }
 
-    .PFPHunks div.Second{
+    .IncognitoHunks div.Second{
         top:175px;
     }
 
-    .PFPHunks div.Third{
+    .IncognitoHunks div.Third{
         top:270px;
     }
 }

@@ -1,0 +1,46 @@
+.IncognitoHunks{
+    width:100%;
+    height:100vh;
+    min-height:840px;
+    display:flex;
+    position:relative;
+    flex-direction:row;
+    justify-content:center;
+    overflow:visible;
+}
+
+.IncognitoHunks .Blur{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+@media (max-width:1000px){
+    .IncognitoHunks{
+        flex-direction:column-reverse;
+        align-items:center;
+        height:1000px;
+    }
+}
+
+@media (max-width:600px){
+    .IncognitoHunks{
+        height:1050px;
+    }
+}
+
+@media (max-width:550px){
+    .IncognitoHunks{
+        height:1080px;
+        background-color: #96a5fe;
+    }
+
+    .IncognitoHunks .Description.Scheme{
+        height:90%;
+    }
+}
