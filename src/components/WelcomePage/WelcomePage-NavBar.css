@@ -34,7 +34,24 @@
 
 .NavBar .NavList p.NavListSpace{
     margin-right:auto;
+    position: relative;
 }
+
+.NavBar .NavList p.NavListSpace::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../images/IncognitoHunks/cs.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
 
 .NavBar .NavList p{
     margin-right:35px;

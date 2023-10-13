@@ -65,7 +65,7 @@ export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
                <button onClick={toggleNavBar}><FaTimes/></button>  
                <img src={collections} className={"Mobile"} alt="NFT Collections 3D Hunks"/>
                <p onClick={() => scrollToComponent(hunks10kRef)}>VIBIN' HUNKS</p>
-               <p className={"NavListSpace"} onClick={() => scrollToComponent(pfpHunksRef)}>PFP HUNKS</p>
+               <p className={"NavListSpace"} onClick={() => scrollToComponent(pfpHunksRef)}>IIIXYZKS</p>
                <div className={"RowFlex"}>
                <a href="toBeAdded" target="_blank"><FaTwitter className={"NavListSvg"}/></a>
                <a href="toBeAdded" target="_blank"><FaInstagram className={"NavListSvg"}/></a>
