@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction, useState, useEffect} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Autoplay} from 'swiper';
-import logo from '../../../src/images/logo.svg';
+import logo from '../../../src/images/logo.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './WelcomePage-Slider.css';

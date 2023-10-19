@@ -16,8 +16,8 @@
     top:0;
     bottom:0;
     z-index: 1;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
 }
 
 .IncognitoHunks .Tapes {
@@ -29,7 +29,7 @@
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../images/IncognitoHunks/tapes.png);
+    background-image: url(../../images/IncognitoHunks/tapes.svg);
     background-position: center center;
 }
 
@@ -42,10 +42,9 @@
     z-index: 1;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(../../images/IncognitoHunks/question.png);
+    background-image: url(../../images/IncognitoHunks/question.svg);
     background-position: center center;
 }
-
 
 @media (max-width:1000px){
     .IncognitoHunks{
@@ -54,12 +53,18 @@
         height:1000px;
     }
     .IncognitoHunks .Questionmarks {
-        background-image: url(../../images/IncognitoHunks/question_small.png);
+        background-image: url(../../images/IncognitoHunks/question_small.svg);
     }
     .IncognitoHunks .Tapes {
         background-size: 100% auto;
         background-position: center center;
         background-image: url(../../images/IncognitoHunks/tapes_small.png);
+    }   
+}
+
+@media (max-width:770px){
+    .IncognitoHunks .Tapes {
+        background-size: auto 100%;
     }    
 }
 

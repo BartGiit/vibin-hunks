@@ -40,12 +40,12 @@
 .NavBar .NavList p.NavListSpace::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../../images/IncognitoHunks/cs.png');
-    background-size: cover; 
+    top: -38%;
+    left: -8%;
+    right: -8%;
+    bottom: -38%;
+    background-image: url('../../images/IncognitoHunks/cs.svg');
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
     pointer-events: none;
