@@ -1,6 +1,7 @@
 {
   "homepage": "http://BartGiit.github.io/vibin-hunks",
   "name": "vibin-hunks",
+  "homepage": "http://vibinhunks.smallhost.pl/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -35,7 +35,7 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    border-radius:38px;
+    border-radius:48px;
 }
 
 .Hunks10k .swiper-slide video{
@@ -91,7 +91,7 @@
 @media(max-width:1000px){
     .Hunks10k .Slider{
         margin-top:45px;
-        width:100%;
+        width:100vw;
         padding-right:0;
     }
     .Hunks10k .swiper{
@@ -119,11 +119,12 @@
     }
 
     .Hunks10k .swiper{
-        width:100%;
+        width:102vw;
         height:520px;
+        margin-left:-1vw;
     }
 
-    .Hunks10k .InstructionSwipe {
+    .Hunks10k .InstructionSwipe{
         width: 100vw;
         height: calc((100vw * 3.5)/8)
     }

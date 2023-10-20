@@ -30,7 +30,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../../images/IncognitoHunks/tapes.svg);
-    background-position: center center;
+    background-position: center 50px;
 }
 
 .IncognitoHunks .Questionmarks {
@@ -58,13 +58,14 @@
     .IncognitoHunks .Tapes {
         background-size: 100% auto;
         background-position: center center;
-        background-image: url(../../images/IncognitoHunks/tapes_small.png);
+        background-image: url(../../images/IncognitoHunks/tapes_small.svg);
     }   
 }
 
 @media (max-width:770px){
     .IncognitoHunks .Tapes {
         background-size: auto 100%;
+        background-position: center 40px;
     }    
 }
 

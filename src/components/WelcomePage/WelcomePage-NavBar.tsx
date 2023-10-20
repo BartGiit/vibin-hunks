@@ -67,8 +67,8 @@ export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
                <p onClick={() => scrollToComponent(hunks10kRef)}>VIBIN' HUNKS</p>
                <p className={"NavListSpace"} onClick={() => scrollToComponent(pfpHunksRef)}>IIIXYZKS</p>
                <div className={"RowFlex"}>
-               <a href="toBeAdded" target="_blank"><FaTwitter className={"NavListSvg"}/></a>
-               <a href="toBeAdded" target="_blank"><FaInstagram className={"NavListSvg"}/></a>
+               <a href="https://twitter.com/VibinHunks" rel="noreferrer" target="_blank"><FaTwitter className={"NavListSvg"}/></a>
+               <a href="https://www.instagram.com/vibinhunks/" rel="noreferrer" target="_blank"><FaInstagram className={"NavListSvg"}/></a>
                <a href="toBeAdded" target="_blank"><FaDiscord className={"NavListSvg"}/></a>
                <a href="toBeAdded" target="_blank"><img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg" alt="Vibin' Hunks Opensea" /></a>
                </div>

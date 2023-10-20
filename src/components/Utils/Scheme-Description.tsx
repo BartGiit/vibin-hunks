@@ -13,6 +13,9 @@ interface DescriptionProps {
 }
 
 export const Description = (props: DescriptionProps) => {
+    const _onClick = (e:any) => {
+        e.preventDefault()
+      }
     const [isVisible, setIsVisible] = useState(false);
     const descriptionRef = useRef<HTMLDivElement | null>(null);
 
@@ -48,7 +51,7 @@ export const Description = (props: DescriptionProps) => {
             <h1 style={{textAlign:props.align}}>{props.titleSecond}</h1>
             <p className={"Space"} style={{textAlign:props.align}}>{props.descriptionFirst}</p>
             <p style={{textAlign:props.align}}>{props.descriptionSecond}</p>
-            <a href="toBeAdded" className={"Btn"} style={{marginLeft:props.marginLeft, marginRight:props.marginRight}}>Soon on Opensea</a>
+            <a href="toBeAdded" className={"Btn"} style={{marginLeft:props.marginLeft, marginRight:props.marginRight}} onClick={e =>_onClick(e)}>Soon on Opensea</a>
          </div>
     );
 }

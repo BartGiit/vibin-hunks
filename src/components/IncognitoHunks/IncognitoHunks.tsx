@@ -10,7 +10,7 @@ export const IncognitoHunks = () => {
         <div className="Questionmarks"/>
         <div className="Tapes"/>
         <Gallery/>
-        <Description id="description2" marginLeft="17.5%" marginRight="auto" align="left" titleFirst="TBA" titleSecond="Hunks" descriptionFirst="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus" descriptionSecond="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae"/>
+        <Description id="description2" marginLeft="17.5%" marginRight="auto" align="left" titleFirst="???" titleSecond="Hunks" descriptionFirst="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus" descriptionSecond="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae"/>
       </div>
     );
   }
