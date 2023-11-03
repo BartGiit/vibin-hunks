@@ -69,7 +69,7 @@ export const NavBar = ({ hunks10kRef, pfpHunksRef }: NavBarProps) => {
                <div className={"RowFlex"}>
                <a href="https://twitter.com/VibinHunks" rel="noreferrer" target="_blank"><FaTwitter className={"NavListSvg"}/></a>
                <a href="https://www.instagram.com/vibinhunks/" rel="noreferrer" target="_blank"><FaInstagram className={"NavListSvg"}/></a>
-               <a href="toBeAdded" target="_blank"><FaDiscord className={"NavListSvg"}/></a>
+               <a href="https://discord.gg/QKH3WaZs" target="_blank"><FaDiscord className={"NavListSvg"}/></a>
                <a href="toBeAdded" target="_blank"><img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg" alt="Vibin' Hunks Opensea" /></a>
                </div>
                <img src={vibeWithUs} className={"Mobile Second"} alt="Vibin NFT Collections Hunks"/>

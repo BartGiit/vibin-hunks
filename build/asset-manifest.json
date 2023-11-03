@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c580a314.css",
-    "main.js": "/static/js/main.26f8b752.js",
+    "main.js": "/static/js/main.0834e1b1.js",
     "static/js/787.d490d84b.chunk.js": "/static/js/787.d490d84b.chunk.js",
     "static/media/Vibin-Hunks-slide2.mp4": "/static/media/Vibin-Hunks-slide2.f0e010bc019b8e83a840.mp4",
     "static/media/Vibin-Hunks-slide1.mp4": "/static/media/Vibin-Hunks-slide1.6e5a42f740f38282ac6d.mp4",
@@ -16,13 +16,10 @@
     "static/media/swipe.mp4": "/static/media/swipe.a85bb7ee34eb0629ebc3.mp4",
     "static/media/amor_mobile.mp4": "/static/media/amor_mobile.148df10af493c627548b.mp4",
     "static/media/logo.png": "/static/media/logo.f30f1a27f358faf48339.png",
-    "static/media/Vibin-Hunks-Slide8.mp4": "/static/media/Vibin-Hunks-Slide8.a447bfad6835850d1e45.mp4",
     "static/media/Vibin-Hunks-Slide1.mp4": "/static/media/Vibin-Hunks-Slide1.6722cbf4780e55976113.mp4",
     "static/media/Vibin-Hunks-Slide5.mp4": "/static/media/Vibin-Hunks-Slide5.8aed8a6148eb0f167c20.mp4",
     "static/media/third.png": "/static/media/third.a8c45f9ea30ac2710e1f.png",
     "static/media/first.png": "/static/media/first.50bb9bacaa22a97c6aa4.png",
-    "static/media/Vibin-Hunks-Slide10.mp4": "/static/media/Vibin-Hunks-Slide10.b015c01aff941a2465e8.mp4",
-    "static/media/Vibin-Hunks-Slide9.mp4": "/static/media/Vibin-Hunks-Slide9.d801a51754cacf32c98e.mp4",
     "static/media/second.png": "/static/media/second.f29aa431e9c4d9eef6f6.png",
     "static/media/swipe.webm": "/static/media/swipe.5654de906d203becbd8a.webm",
     "static/media/Vibin-Hunks-Slide4.mp4": "/static/media/Vibin-Hunks-Slide4.5523403293e9c89cdf3a.mp4",
@@ -31,7 +28,6 @@
     "static/media/desktopCreators.svg": "/static/media/desktopCreators.691de693a15d065881c0c807bb3df333.svg",
     "static/media/Vibin-Hunks-Slide6.mp4": "/static/media/Vibin-Hunks-Slide6.b272c731c1b4e6887223.mp4",
     "static/media/tapes.svg": "/static/media/tapes.9938eecfbc22b48eb7bf.svg",
-    "static/media/Vibin-Hunks-Slide7.mp4": "/static/media/Vibin-Hunks-Slide7.6a6c5a6005474b5d7d30.mp4",
     "static/media/desktopYouKnow.svg": "/static/media/desktopYouKnow.4885c3eb7e013051eeb84a8c193b6dda.svg",
     "static/media/Vibin-Hunks-slide2-poster.jpeg": "/static/media/Vibin-Hunks-slide2-poster.3fef202541d4ad0fe10d.jpeg",
     "static/media/tapes_small.svg": "/static/media/tapes_small.3ceba6daeee8a458508a.svg",
@@ -52,7 +48,7 @@
     "static/media/shaker.png": "/static/media/shaker.5e54cbe89017988e2a61.png",
     "static/media/Bart.jpeg": "/static/media/Bart.ee3d307ce078848ac7df.jpeg",
     "static/media/Michael.jpeg": "/static/media/Michael.91156374aef616e488b7.jpeg",
-    "static/media/Nic.jpeg": "/static/media/Nic.ba9608b025bada6d4463.jpeg",
+    "static/media/Nick.jpeg": "/static/media/Nick.ba9608b025bada6d4463.jpeg",
     "static/media/cs.svg": "/static/media/cs.24f9b21efeaf83394d79.svg",
     "static/media/question.svg": "/static/media/question.7dc0924ea9cfd9708103.svg",
     "static/media/logoNoShadow.svg": "/static/media/logoNoShadow.c115e9c947d18131210239fdabee9dbe.svg",
@@ -64,11 +60,11 @@
     "static/media/ellipseThree.svg": "/static/media/ellipseThree.5249cf35983c713b4e1b1cab3f78492c.svg",
     "static/media/ellipseOne.svg": "/static/media/ellipseOne.eb38be583fd0862cb6770166cd6dc095.svg",
     "main.c580a314.css.map": "/static/css/main.c580a314.css.map",
-    "main.26f8b752.js.map": "/static/js/main.26f8b752.js.map",
+    "main.0834e1b1.js.map": "/static/js/main.0834e1b1.js.map",
     "787.d490d84b.chunk.js.map": "/static/js/787.d490d84b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c580a314.css",
-    "static/js/main.26f8b752.js"
+    "static/js/main.0834e1b1.js"
   ]
 }

@@ -73,7 +73,7 @@ export const SocialMedia = ({ onHeightChange, Mobile }: { onHeightChange: (dista
           <div className="Icons">
             <a href="https://twitter.com/VibinHunks" target="_blank" rel="noreferrer"><FaTwitter className={"IconFontAwesome"} /></a>
             <a href="https://www.instagram.com/vibinhunks/" target="_blank" rel="noreferrer"><FaInstagram className={"IconFontAwesome"} /></a>
-            <a href="toBeAdded" target="_blank" rel="noreferrer"><FaDiscord className={"IconFontAwesome"} /></a>
+            <a href="https://discord.gg/QKH3WaZs" target="_blank" rel="noreferrer"><FaDiscord className={"IconFontAwesome"} /></a>
             <a href="toBeAdded" target="_blank" rel="noreferrer"><img src="https://storage.googleapis.com/opensea-static/Logomark/Logomark-Transparent%20White.svg" alt="Vibin' Hunks Opensea" /></a>
           </div>
           <div className="Logo">
